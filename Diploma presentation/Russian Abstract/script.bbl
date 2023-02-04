@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{setarma}
+Alessandra Amendola, Marcella Niglio, and Cosimo Vitale.
+\newblock The moments of setarma models.
+\newblock {\em Statistics \& probability letters}, pages 625--633, 2006.
+
+\bibitem{ssa_2}
+James~B Elsner and Anastasios~A Tsonis.
+\newblock Singular spectrum analysis: a new tool in time series analysis.
+\newblock {\em Springer Science \& Business Media}, 1996.
+
+\bibitem{ssa}
+Hossein Hassani.
+\newblock Singular spectrum analysis: methodology and comparison.
+\newblock {\em Cardiff University and Central Bank of the Islamic Republic of
+  Iran}, 2007.
+
+\bibitem{backpropagation}
+Yann LeCun, D~Touresky, G~Hinton, and T~Sejnowski.
+\newblock A theoretical framework for back-propagation.
+\newblock {\em Proceedings of the 1988 connectionist models summer school},
+  pages 21--28, 1988.
+
+\bibitem{arfima}
+J.~S. Pai.
+\newblock A one-step optimization procedure for arfima processes.
+\newblock {\em Springer Berlin Heidelberg}, pages 171--177, 1997.
+
+\bibitem{rnn}
+David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock {\em Nature}, pages 533--536, 1986.
+
+\bibitem{figarch}
+Maryam Tayefi and TV~Ramanathan.
+\newblock An overview of figarch and related time series models.
+\newblock {\em Austrian journal of statistics}, pages 175--196, 2012.
+
+\end{thebibliography}

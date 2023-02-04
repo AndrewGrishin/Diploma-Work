@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Problem Formalization}{3}{0}{1}
+\beamer@sectionintoc {2}{Main Techniques}{4}{0}{2}
+\beamer@sectionintoc {3}{Already existing solutions}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{Stationary methods}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Non Stationary Methods}{9}{0}{3}
+\beamer@sectionintoc {4}{RNN}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Simple RNN}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{GRU}{16}{0}{4}
+\beamer@subsectionintoc {4}{3}{LSTM}{17}{0}{4}
+\beamer@sectionintoc {5}{Comparison of results}{18}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{19}{0}{6}

@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{article} % класс документа
+\usepackage[english, russian]{babel} % использование языковых вставок
+\usepackage[T2A]{fontenc} % корректное ототбражение русских букв
+\setcounter{tocdepth}{4} % подсчет в глубину вложений глав и секций
+\usepackage{xcolor} % использование цветовой граммы
+\usepackage{hyperref} % использование гипертекста
+\hypersetup{linkcolor=black, linkbordercolor=white} % настройка стиля гипертекста
+\usepackage{bookmark} % использование отображения оглавленя в pdf приложениях
+\usepackage{booktabs, float} % для форматирования таблиц
+\usepackage{pgfplots} % для построения графиков
+\pgfplotsset{compat = newest} % использование последней версии графопостроителя
+\usepgfplotslibrary{fillbetween} % использование библиотеки для штриховки между графиками
+\usetikzlibrary{patterns} % использование библиотеки шаблонов штриховки
+\usepackage{indentfirst} % подключение библиотеки для красной строки
+\usepackage{url} % для отображения url в списке литературы
+
+\AtBeginDocument{\renewcommand\contentsname{}}
+
+\usepackage[14pt]{extsizes} % для того чтобы задать нестандартный 14-ый размер шрифта
+\usepackage[utf8]{inputenc} % кодировка всего документа в UTF-8
+\usepackage{amssymb, amsmath} %  математическое отображение символов
+\usepackage[
+	left=22mm, 
+	top=20mm, 
+	right=15mm, 
+	bottom=20mm, 
+	nohead,
+	footskip=10mm
+]{geometry} % настройки полей документа
+
+\begin{document} 
+	\setlength{\parindent}{1cm} % устанавливается красная строка размером в 1 cm.
+	
+	% Титульный лист
+	\input{./source_tex/title_page.tex}
+	\newpage
+	
+	% Оглавление
+	\tableofcontents
+	\addcontentsline{toc}{section}{\LARGE Оглавление}
+	\newpage
+	
+	\input{./source_tex/introduction.tex}
+	\input{./source_tex/pre_experiment.tex}
+	\input{./source_tex/experiment.tex}
+	\input{./source_tex/discussion.tex}
+	\input{./source_tex/outroduction.tex}
+	
+	% Список литературы
+	\newpage
+	\bibliographystyle{plain}
+	\bibliography{./bibliography/bibliography}
+	\addcontentsline{toc}{section}{Список литературы}
+\end{document} 
