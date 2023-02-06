@@ -6,6 +6,12 @@ Nathan Benaich and Ian Hogarth.
 \newblock Air Street Capital, Plural, 2022.
 \newblock \url{https://www.stateof.ai/}.
 
+\bibitem{efficient_market}
+Eugene Fama.
+\newblock Efficient capital markets: A review of theory and empirical work.
+\newblock {\em The journal of Finance}, 25(2):383--417, 1970.
+\newblock \url{https://www.jstor.org/stable/2325486}.
+
 \bibitem{fama_market_efficiency}
 FinEX.
 \newblock {\em Гипотеза эффективного рынка: что
@@ -33,6 +39,15 @@ Adam Smith.
   the Wealth of Nations}.
 \newblock Harriman House Limited, 2010.
 
+\bibitem{benoit_mandelbrot}
+Constantinos~E. Vorlow.
+\newblock The (mis)behavior of markets: A fractal view of risk, ruin and
+  reward.
+\newblock {\em Journal of Economic Behavior and Organization}, 61(3):513--515,
+  2006.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S0167268106000692}.
+
 \bibitem{ropert_ouwen}
 Роберт Оуэн.
 \newblock {\em Спорная область между двумя
@@ -43,7 +58,7 @@ Adam Smith.
 АС Палювина.
 \newblock Фрактальный анализ финансового рынка
   на основе коэффициента Хёрста.
-\newblock {\em Вектор экономики}, (4):30--30, 2019.
+\newblock {\em Вектор экономики}, pages 30--30, 2019.
 \newblock
   \url{http://www.vectoreconomy.ru/images/publications/2019/4/mathematicalmethods/Palyuvina.pdf}.
 
