@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{nn_all_over_us}
 Nathan Benaich and Ian Hogarth.
@@ -20,11 +20,28 @@ FinEX.
 \newblock
   \url{https://finex-etf.ru/university/news/gipoteza_effektivnogo_rynka_chto_eto_i_kak_ispolzovat}.
 
+\bibitem{white_noise_for_stochastic_differential_equation}
+L.S. Lima and L.L.B. Miranda.
+\newblock Price dynamics of the financial markets using the stochastic
+  differential equation for a potential double well.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  490:828--833, 2018.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S0378437117308324?casa_token=rzOzlZw26ZUAAAAA:TLYp15lOen3WJC65uWCpHNNGItqli5Iuqa5yb5LSZKPj5mznOHBbH3r_CwTyjDHAe2ZYaVGA}.
+
 \bibitem{alfred_marshall}
 Alfred Marshall.
 \newblock {\em Elements of economics of industry: being the first volume of
   Elements of Economics}, volume~1.
 \newblock Macmillan, 1903.
+
+\bibitem{seasonality_in_financial_TS_is_real}
+Mostafa Seif, Paul Docherty, and Abul Shamsuddin.
+\newblock Seasonal anomalies in advanced emerging stock markets.
+\newblock {\em The Quarterly Review of Economics and Finance}, 66:169--181,
+  2017.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S1062976917300832}.
 
 \bibitem{matrin_swell}
 Martin Sewell.
@@ -33,11 +50,33 @@ Martin Sewell.
 \newblock
   \url{http://www.cs.ucl.ac.uk/fileadmin/UCL-CS/images/Research_Student_Information/RN_11_04.pdf}.
 
+\bibitem{seasonality_test_for_financial_stock_market}
+Savva Shanaev and Binam Ghimire.
+\newblock A generalised seasonality test and applications for cryptocurrency
+  and stock market seasonality.
+\newblock {\em The Quarterly Review of Economics and Finance}, 86:172--185,
+  2022.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S1062976922000801}.
+
 \bibitem{adam_smith}
 Adam Smith.
 \newblock {\em The Wealth of Nations: An inquiry into the nature and causes of
   the Wealth of Nations}.
 \newblock Harriman House Limited, 2010.
+
+\bibitem{brownian_motion_for_stochastic_differential_equation}
+Pantelis Tassopoulos and Yorgos Protonotarios.
+\newblock Brownian motion \& the stochastic behavior of stocks.
+\newblock {\em Journal of Mathematical Finance}, 12(1):138--149, 2021.
+
+\bibitem{attention_transformers}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+\newblock
+  \url{https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf}.
 
 \bibitem{benoit_mandelbrot}
 Constantinos~E. Vorlow.
@@ -47,6 +86,13 @@ Constantinos~E. Vorlow.
   2006.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0167268106000692}.
+
+\bibitem{transformers_are_useless_for_TSF}
+Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
+\newblock Are transformers effective for time series forecasting?
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
+  2023.
+\newblock \url{https://github.com/cure-lab/LTSF-Linear}.
 
 \bibitem{ropert_ouwen}
 Роберт Оуэн.
@@ -61,5 +107,19 @@ Constantinos~E. Vorlow.
 \newblock {\em Вектор экономики}, pages 30--30, 2019.
 \newblock
   \url{http://www.vectoreconomy.ru/images/publications/2019/4/mathematicalmethods/Palyuvina.pdf}.
+
+\bibitem{stationarity_of_time_series_econometrics}
+Н. В. Артамонов; Е. А. Ивин; А. Н. Курбацкий;~Д.
+  Фантаццини.
+\newblock Введение в анализ временных рядов:
+  учебное пособие для вузов.
+\newblock {\em Московский государственный
+  университет имени М. В. Ломоносова,
+  Московская школа экономики, Кафедра
+  эконометрики и математических методов
+  экономики. – Вологда : ВолНЦ РАН, 2021. – 134
+  с.: ил., табл.}, 2021.
+\newblock
+  \url{https://mse.msu.ru/wp-content/uploads/2021/03/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D1%80%D1%8F%D0%B4%D0%BE%D0%B2-1.pdf}.
 
 \end{thebibliography}

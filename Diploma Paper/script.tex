@@ -2,6 +2,7 @@
 \usepackage[english, russian]{babel} % использование языковых вставок
 \usepackage[T2A]{fontenc} % корректное ототбражение русских букв
 \setcounter{tocdepth}{4} % подсчет в глубину вложений глав и секций
+\setcounter{secnumdepth}{4} % аналогично предыдущему
 \usepackage{xcolor} % использование цветовой граммы
 \usepackage{hyperref} % использование гипертекста
 \hypersetup{linkcolor=black, linkbordercolor=white} % настройка стиля гипертекста
@@ -13,6 +14,14 @@
 \usetikzlibrary{patterns} % использование библиотеки шаблонов штриховки
 \usepackage{indentfirst} % подключение библиотеки для красной строки
 \usepackage{url} % для отображения url в списке литературы
+
+\newtheorem{theorem}{Теорема} % для определения теорем
+\newtheorem{definition}{Определение} % для определения определений
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\cov}{\text{cov} }
 
 \AtBeginDocument{\renewcommand\contentsname{}}
 
@@ -27,6 +36,8 @@
 	nohead,
 	footskip=10mm
 ]{geometry} % настройки полей документа
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}} % для 4-ого уровня оглавления
 
 \begin{document} 
 	\setlength{\parindent}{1cm} % устанавливается красная строка размером в 1 cm.
