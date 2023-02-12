@@ -15,10 +15,11 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Generalized Auto-Regressive Conditional Heteroskedasticity}{10}{subsubsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{10}{subsubsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{10}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}Self Exciting Threshold Auto-regressive Moving Average}{10}{subsubsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.7}Neural Network}{10}{subsubsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.8}Singular Spectrum Analysis}{10}{subsubsection.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.9}Transformers и моделирование сезонности}{10}{subsubsection.2.2.9}%
+\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{10}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Self Exciting Threshold Auto-regressive Moving Average}{10}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Fourier \& Wavelet analysis}{10}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Neural Network: MLP, RNN, WNN}{10}{subsubsection.2.2.9}%
+\contentsline {subsubsection}{\numberline {2.2.10}Transformers и моделирование сезонности}{10}{subsubsection.2.2.10}%
 \contentsline {section}{\numberline {3}Описание данных и эксперимент}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{10}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{10}{subsection.3.2}%
