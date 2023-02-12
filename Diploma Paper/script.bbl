@@ -35,6 +35,12 @@ Alfred Marshall.
   Elements of Economics}, volume~1.
 \newblock Macmillan, 1903.
 
+\bibitem{word2vec_2013}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+\newblock \url{https://arxiv.org/abs/1301.3781}.
+
 \bibitem{seasonality_in_financial_TS_is_real}
 Mostafa Seif, Paul Docherty, and Abul Shamsuddin.
 \newblock Seasonal anomalies in advanced emerging stock markets.
