@@ -76,6 +76,12 @@ Pantelis Tassopoulos and Yorgos Protonotarios.
 \newblock Brownian motion \& the stochastic behavior of stocks.
 \newblock {\em Journal of Mathematical Finance}, 12(1):138--149, 2021.
 
+\bibitem{ewma}
+CFI Team.
+\newblock Exponentially weighted moving average (ewma).
+\newblock {\em Corporative Finance Institute (CFI)}, 2023.
+\newblock url: \url{https://corporatefinanceinstitute.com/about-cfi/}.
+
 \bibitem{attention_transformers}
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
   Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
