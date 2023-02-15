@@ -12,15 +12,15 @@
 \contentsline {subsection}{\numberline {2.2}Наиболее популярные методы решения}{9}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Exponentially Weighted Moving Average}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Auto-regressive Integrated Moving Average}{16}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Generalized Auto-Regressive Conditional Heteroskedasticity}{18}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{18}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{18}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{18}{subsubsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{18}{subsubsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{18}{subsubsection.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{18}{subsubsection.2.2.9}%
-\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{18}{paragraph.2.2.9.1}%
-\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{18}{paragraph.2.2.9.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Generalized Auto-Regressive Conditional Heteroskedasticity}{19}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{19}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{19}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{19}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{19}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{19}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{19}{subsubsection.2.2.9}%
+\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{19}{paragraph.2.2.9.1}%
+\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{19}{paragraph.2.2.9.2}%
 \contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{19}{paragraph.2.2.9.3}%
 \contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: GD семейство}{19}{paragraph.2.2.9.4}%
 \contentsline {section}{\numberline {3}Описание данных и эксперимент}{19}{section.3}%
