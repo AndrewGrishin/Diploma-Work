@@ -24,7 +24,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\cov}{\text{cov} }
-
+\newcommand{\myref}[1]{\ref{#1} стр. \pageref{#1}}
 
 \AtBeginDocument{\renewcommand\contentsname{}}
 
@@ -46,7 +46,7 @@
 	\setlength{\parindent}{1cm} % устанавливается красная строка размером в 1 cm.
 	
 	% Титульный лист
-	\input{./source_tex/title_page.tex}
+	\input{./source/source_tex/title_page.tex}
 	\newpage
 	
 	% Оглавление
@@ -54,15 +54,15 @@
 	\addcontentsline{toc}{section}{\LARGE Оглавление}
 	\newpage
 	
-	\input{./source_tex/introduction.tex}
-	\input{./source_tex/pre_experiment.tex}
-	\input{./source_tex/experiment.tex}
-	\input{./source_tex/discussion.tex}
-	\input{./source_tex/outroduction.tex}
+	\input{./source/source_tex/introduction.tex}
+	\input{./source/source_tex/pre_experiment.tex}
+	\input{./source/source_tex/experiment.tex}
+	\input{./source/source_tex/discussion.tex}
+	\input{./source/source_tex/outroduction.tex}
 	
 	% Список литературы
 	\newpage
 	\bibliographystyle{plain}
-	\bibliography{./bibliography/bibliography}
+	\bibliography{./source/bibliography/bibliography}
 	\addcontentsline{toc}{section}{Список литературы}
 \end{document} 

@@ -1,10 +1,29 @@
 \begin{thebibliography}{10}
 
+\bibitem{alexandridis2014wavelet}
+Antonios~K Alexandridis and Achilleas~D Zapranis.
+\newblock {\em Wavelet neural networks: with applications in financial
+  engineering, chaos, and classification}.
+\newblock John Wiley \& Sons, 2014.
+\newblock
+  \url{https://books.google.ru/books?hl=en&lr=&id=cYpgAwAAQBAJ&oi=fnd&pg=PR13&dq=wavelet+networks+and+applications&ots=PRTQtLGg33&sig=8S6--O6eRo8bYywFQpmCyT5rMME&redir_esc=y#v=onepage&q=wavelet%20networks%20and%20applications&f=false}.
+
 \bibitem{nn_all_over_us}
 Nathan Benaich and Ian Hogarth.
 \newblock {\em State of AI Report 2022}.
 \newblock Air Street Capital, Plural, 2022.
 \newblock \url{https://www.stateof.ai/}.
+
+\bibitem{arima}
+George~EP Box, Gwilym~M Jenkins, Gregory~C Reinsel, and Greta~M Ljung.
+\newblock {\em Time series analysis: forecasting and control}.
+\newblock John Wiley \& Sons, 2015.
+
+\bibitem{wold_decomposition}
+Christiano.
+\newblock Wold representation theorem.
+\newblock {\em Northwestern University: FINC-520}, " ".
+\newblock \url{https://faculty.wcas.northwestern.edu/lchrist/finc520/wold.pdf}.
 
 \bibitem{efficient_market}
 Eugene Fama.
@@ -119,6 +138,14 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
 \newblock {\em Вектор экономики}, pages 30--30, 2019.
 \newblock
   \url{http://www.vectoreconomy.ru/images/publications/2019/4/mathematicalmethods/Palyuvina.pdf}.
+
+\bibitem{panov_linear_operator}
+Тарас~Евгеньевич Панов.
+\newblock Линейная алгебра и геометрия.
+\newblock {\em Механико-математический факультет
+  МГУ}, 2021.
+\newblock
+  \url{http://higeom.math.msu.su/people/taras/teaching/slides-linalg/panov-linalg-lec10.pdf}.
 
 \bibitem{stationarity_of_time_series_econometrics}
 Н. В. Артамонов; Е. А. Ивин; А. Н. Курбацкий;~Д.
