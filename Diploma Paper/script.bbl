@@ -39,6 +39,37 @@ FinEX.
 \newblock
   \url{https://finex-etf.ru/university/news/gipoteza_effektivnogo_rynka_chto_eto_i_kak_ispolzovat}.
 
+\bibitem{jarque_bera_test}
+Yulia~R. Gel and Joseph~L. Gastwirth.
+\newblock A robust modification of the jarque–bera test of normality.
+\newblock {\em Economics Letters}, 99(1):30--32, 2008.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S0165176507001838}.
+
+\bibitem{adf_unit_root_test}
+R.I.D. Harris.
+\newblock Testing for unit roots using the augmented dickey-fuller test: Some
+  issues relating to the size, power and the lag structure of the test.
+\newblock {\em Economics Letters}, 38(4):381--386, 1992.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/016517659290022Q}.
+
+\bibitem{ljung_box_test}
+Hossein Hassani and Mohammad~Reza Yeganegi.
+\newblock Selecting optimal lag order in ljung–box test.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  541:123700, 2020.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S0378437119320618}.
+
+\bibitem{kpss_unit_root_test}
+Dongin Lee and Peter Schmidt.
+\newblock On the power of the kpss test of stationarity against
+  fractionally-integrated alternatives.
+\newblock {\em Journal of Econometrics}, 73(1):285--302, 1996.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/0304407695017410}.
+
 \bibitem{white_noise_for_stochastic_differential_equation}
 L.S. Lima and L.L.B. Miranda.
 \newblock Price dynamics of the financial markets using the stochastic
@@ -117,6 +148,13 @@ Constantinos~E. Vorlow.
   2006.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0167268106000692}.
+
+\bibitem{hac_standard_errors}
+Kenneth~D. West.
+\newblock {\em Heteroskedasticity and autocorrelation corrections}, pages
+  135--144.
+\newblock Palgrave Macmillan UK, London, 2010.
+\newblock \url{https://doi.org/10.1057/9780230280830_15}.
 
 \bibitem{transformers_are_useless_for_TSF}
 Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
