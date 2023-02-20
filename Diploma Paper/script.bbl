@@ -46,6 +46,18 @@ Yulia~R. Gel and Joseph~L. Gastwirth.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0165176507001838}.
 
+\bibitem{granger1980introduction}
+Clive~WJ Granger and Roselyne Joyeux.
+\newblock An introduction to long-memory time series models and fractional
+  differencing.
+\newblock {\em Journal of time series analysis}, 1(1):15--29, 1980.
+
+\bibitem{hansen2005forecast}
+Peter~R Hansen and Asger Lunde.
+\newblock A forecast comparison of volatility models: does anything beat a
+  garch (1, 1)?
+\newblock {\em Journal of applied econometrics}, 20(7):873--889, 2005.
+
 \bibitem{adf_unit_root_test}
 R.I.D. Harris.
 \newblock Testing for unit roots using the augmented dickey-fuller test: Some
@@ -61,6 +73,17 @@ Hossein Hassani and Mohammad~Reza Yeganegi.
   541:123700, 2020.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0378437119320618}.
+
+\bibitem{hosking_1981}
+J.~R.~M. Hosking.
+\newblock Fractional differencing.
+\newblock {\em Biometrika}, 68(1):165--176, 1981.
+
+\bibitem{hurst1951long}
+Harold~Edwin Hurst.
+\newblock Long-term storage capacity of reservoirs.
+\newblock {\em Transactions of the American society of civil engineers},
+  116(1):770--799, 1951.
 
 \bibitem{kpss_unit_root_test}
 Dongin Lee and Peter Schmidt.
@@ -78,6 +101,19 @@ L.S. Lima and L.L.B. Miranda.
   490:828--833, 2018.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0378437117308324?casa_token=rzOzlZw26ZUAAAAA:TLYp15lOen3WJC65uWCpHNNGItqli5Iuqa5yb5LSZKPj5mznOHBbH3r_CwTyjDHAe2ZYaVGA}.
+
+\bibitem{andrew1991longterm}
+Andrew~W. Lo.
+\newblock Long-term memory in stock market prices.
+\newblock {\em Econometrica}, 59(5):1279--1313, 1991.
+\newblock \url{http://www.jstor.org/stable/2938368}.
+
+\bibitem{mandelbrot1972statistical}
+Benoit Mandelbrot.
+\newblock Statistical methodology for nonperiodic cycles: from the covariance
+  to r/s analysis.
+\newblock In {\em Annals of Economic and Social Measurement, Volume 1, Number
+  3}, pages 259--290. NBER, 1972.
 
 \bibitem{alfred_marshall}
 Alfred Marshall.
@@ -163,6 +199,19 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
   2023.
 \newblock \url{https://github.com/cure-lab/LTSF-Linear}.
 
+\bibitem{garafutdinov2021research}
+РВ Гарафутдинов.
+\newblock Исследование влияния некоторых
+  параметров модели arfima на точность
+  прогноза финансовых временных рядов.
+\newblock {\em Прикладная эконометрика}, 62:85, 2021.
+
+\bibitem{verbik_econometrics_garchs}
+Вербик~и Марно.
+\newblock Путеводитель по современной
+  эконометрике.
+\newblock {\em Корреляция}, 2008.
+
 \bibitem{ropert_ouwen}
 Роберт Оуэн.
 \newblock {\em Спорная область между двумя
@@ -198,5 +247,14 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
   с.: ил., табл.}, 2021.
 \newblock
   \url{https://mse.msu.ru/wp-content/uploads/2021/03/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D1%80%D1%8F%D0%B4%D0%BE%D0%B2-1.pdf}.
+
+\bibitem{quantil_2_2007}
+Международный эконометрический журнал на
+  русском~языке №2.
+\newblock Квантиль.
+\newblock {\em Международный эконометрический
+  журнал на русском языке: Квантиль}, март
+  2007.
+\newblock \url{http://quantile.ru/02/N2.htm}.
 
 \end{thebibliography}

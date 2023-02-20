@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2021)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: script.aux
 The style file: plain.bst
 Database file #1: ./source/bibliography/bibliography.bib
-Warning--can't use both author and editor fields in hac_standard_errors
-You've used 27 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            676 strings with 10959 characters,
-and the built_in function-call counts, 7888 in all, are:
-= -- 782
-> -- 332
-< -- 3
-+ -- 137
-- -- 106
-* -- 480
-:= -- 1382
-add.period$ -- 103
-call.type$ -- 27
-change.case$ -- 126
+            740 strings with 12846 characters,
+and the built_in function-call counts, 10534 in all, are:
+= -- 1064
+> -- 407
+< -- 4
++ -- 170
+- -- 128
+* -- 645
+:= -- 1823
+add.period$ -- 133
+call.type$ -- 36
+change.case$ -- 164
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 315
-empty$ -- 626
-format.name$ -- 106
-if$ -- 1637
+cite$ -- 36
+duplicate$ -- 425
+empty$ -- 857
+format.name$ -- 128
+if$ -- 2194
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 35
-newline$ -- 160
-num.names$ -- 54
-pop$ -- 118
+int.to.str$ -- 36
+missing$ -- 44
+newline$ -- 207
+num.names$ -- 72
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 136
 quote$ -- 0
-skip$ -- 211
+skip$ -- 287
 stack$ -- 0
-substring$ -- 410
-swap$ -- 45
-text.length$ -- 3
+substring$ -- 620
+swap$ -- 62
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
-warning$ -- 1
-while$ -- 73
-width$ -- 29
-write$ -- 332
-(There was 1 warning)
+type$ -- 128
+warning$ -- 0
+while$ -- 105
+width$ -- 38
+write$ -- 434

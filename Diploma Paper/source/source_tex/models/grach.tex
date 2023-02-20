@@ -1,1 +1,60 @@
 \subsubsection{Generalized Auto-Regressive Conditional Heteroskedasticity}
+Теперь рассматриваем следующее соображение: глядя на график доходностей Apple за 2021 год (для цен открытия), видно, что в какие-то моменты волатильность больше, а в какие-то меньше. 
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = both,
+			legend pos = north west,
+			minor tick num = 1,
+			major grid style = {lightgray},
+			minor grid style = {lightgray!25},
+			xlabel = {2021 год},
+			width = 1.025 \textwidth,
+			height = 0.5 \textwidth,
+			xmin=-5, xmax=260,
+			% ymin=115, ymax=185,
+			xtick={0, 40, 80, 120, 160, 200, 240},
+			xticklabels={03/01, 02/03, 28/04, 24/06, 20/08, 18/10, 14/12},
+			line width=0.3mm
+			]
+			\addplot table [
+			x=x, 
+			y=Open_pct, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/apple_data_test_pct.csv};
+			\legend{AAPL 2021}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Доходности цен открытия акций Apple (AAPL) 2021 (\%)}
+\end{figure}
+Данное явление носит название "кластеризация волатильности". Было бы неплохо научиться ее предсказывать, для чего и была разработана модель ARCH и как ее обобщение - модель GARCH. Для большей простоты в понимании рассматриваем первоначально ARCH, а затем - GARCH.
+\begin{enumerate}
+	\item Пусть изначально есть некоторая модель (неважно ARIMA, ADL, DL, но важно, чтобы исследуемый процесс был стационарен). Тогда формально это записывается так:
+	\begin{equation}
+		\begin{split}
+			y_t & = \text{некоторая модель} + u_t\\
+			u_t & = \varepsilon_t \cdot \sqrt{\alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2}
+		\end{split}
+	\end{equation}
+	Где $\varepsilon_t \sim N(0, 1)$, а $u_t$ - еще одна некоторая величина, зависящая от своих предыдущих значений. Тогда, вычисляя условную дисперсию $u_t$ и математическое ожидание соответственно,  получаем:
+	\begin{equation}
+		\begin{split}
+			\V(u_t) & = \sigma^2_t  = \V(u_t \vert u_{t - 1}, \ldots, u_{t - p}) = \alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2\\
+			\E(\sigma^2_t) & = \sigma^2 = \E\left(\alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2\right) = \\
+			\sigma^2 & = \alpha_0 + \sum_{j = 1}^p \alpha_j \sigma^2\\
+			\sigma^2 & = \frac{\alpha_0}{1 - \sum_{j = 1}^p \alpha_j}
+		\end{split}
+	\end{equation}
+	При этом, в силу неотрицательности дисперсии, необходимо учитывать, что $\alpha_j > 0: j = \overline{1,p}$. Также $\E(\sigma^2_t) = \E(u^2_t) - \E(u_t)\E(u_t) = \sigma^2$. Более того, при этом $\E(u_t) = \E(\varepsilon_t) \cdot \sqrt{\cdot}$, но для большей ясности расписываем $\cov(u_{t}, u_{t - 1} \vert u_{t - 2}, \ldots, u_{t - p}) = \cov(\varepsilon_{t} \cdot \sqrt{\alpha_0 + \alpha_1 u_{t - 1}^2 + \ldots}, \varepsilon_{t - 1} \cdot \sqrt{\cdot}) = \sqrt{\cdot} \cdot \E(\varepsilon_{t}\varepsilon_{t - 1} \cdot \sqrt{\alpha_0 + \alpha_1 u_{t - 1} + \ldots}) - \E(\sqrt{\cdot} \cdot \varepsilon_{t}) \E(\varepsilon_{t - 1}) = \ldots \cdot \E(\varepsilon_{t}) \cdot \E(\varepsilon_{t - 1}) = 0$. Таким образом показано, что $\cov(u_{t}, u_{t - 1}) = 0$, однако появляется закономерный вопрос. \textbf{Q}: Каким образом данная модель поддается оценке? \textbf{A}: Посредством Метода Максимального Правдоподобия.
+	
+	\item Теперь рассматриваем обобщение ARCH на более высокий уровень. Предполагается наличие зависимости между $\sigma^2_t$ и $u^2_{t - p}$, а также предыдущими значениями $\sigma^2_{t - q}$, что в формальном смысле приобретает вид:
+	\begin{equation}
+		\sigma^2_t = \alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2 + \sum_{i = 1}^q \phi_i \sigma^2_{t - i}
+	\end{equation}
+	Существуют и иные дополнения модели: FIGARCH (\myref{link::figarch}), а также TGARCH (Threshold GARCH) и EGARCH (Exponential GARCH) и так далее. Более подробно о них в \cite{verbik_econometrics_garchs}.
+\end{enumerate}
+Таким образом, получается, что данная модель предоставляет возможность предсказывать не саму зависимую переменную ($y_t$), а ее волатильность ($u_t$). Наиболее часто применяется GARCH$(1, 1)$ \cite{hansen2005forecast}. Однако сразу стоит отметить, что при работе с GARCH моделями предполагается, что волатильность симметрична, то есть равновероятно можно отклониться как вниз, так и вверх. Далее для наглядности, действуя по уже отработанному алгоритму, проводим эксперимент на реальных данных: цены акций Apple за 2021 год.\\
+
+\noindent \# TODO: Эксперимент.
