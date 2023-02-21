@@ -14,6 +14,11 @@ Nathan Benaich and Ian Hogarth.
 \newblock Air Street Capital, Plural, 2022.
 \newblock \url{https://www.stateof.ai/}.
 
+\bibitem{bollerslev1986garch}
+Tim Bollerslev.
+\newblock Generalized autoregressive conditional heteroskedasticity.
+\newblock {\em Journal of Econometrics}, 31(3):307--327, 1986.
+
 \bibitem{arima}
 George~EP Box, Gwilym~M Jenkins, Gregory~C Reinsel, and Greta~M Ljung.
 \newblock {\em Time series analysis: forecasting and control}.
@@ -24,6 +29,12 @@ Christiano.
 \newblock Wold representation theorem.
 \newblock {\em Northwestern University: FINC-520}, " ".
 \newblock \url{https://faculty.wcas.northwestern.edu/lchrist/finc520/wold.pdf}.
+
+\bibitem{robert1982arch}
+Robert~F. Engle.
+\newblock Autoregressive conditional heteroscedasticity with estimates of the
+  variance of united kingdom inflation.
+\newblock {\em Econometrica}, 50(4):987--1007, 1982.
 
 \bibitem{efficient_market}
 Eugene Fama.

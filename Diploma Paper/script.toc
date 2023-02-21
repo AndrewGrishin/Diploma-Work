@@ -13,19 +13,19 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Exponentially Weighted Moving Average}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Auto-regressive Integrated Moving Average}{16}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Generalized Auto-Regressive Conditional Heteroskedasticity}{22}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{24}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{29}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{29}{subsubsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{29}{subsubsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{29}{subsubsection.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{29}{subsubsection.2.2.9}%
-\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{29}{paragraph.2.2.9.1}%
-\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{29}{paragraph.2.2.9.2}%
-\contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{29}{paragraph.2.2.9.3}%
-\contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: GD семейство}{29}{paragraph.2.2.9.4}%
-\contentsline {section}{\numberline {3}Описание данных и эксперимент}{29}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{29}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{29}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Обсуждение выводов}{29}{section.4}%
-\contentsline {section}{\numberline {5}Заключение}{29}{section.5}%
-\contentsline {section}{Список литературы}{33}{section*.2}%
+\contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{28}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{32}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{32}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{32}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{33}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{33}{subsubsection.2.2.9}%
+\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{33}{paragraph.2.2.9.1}%
+\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{34}{paragraph.2.2.9.2}%
+\contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{34}{paragraph.2.2.9.3}%
+\contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: GD семейство}{34}{paragraph.2.2.9.4}%
+\contentsline {section}{\numberline {3}Описание данных и эксперимент}{34}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{34}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{34}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Обсуждение выводов}{34}{section.4}%
+\contentsline {section}{\numberline {5}Заключение}{34}{section.5}%
+\contentsline {section}{Список литературы}{38}{section*.2}%

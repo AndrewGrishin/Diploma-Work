@@ -28,33 +28,79 @@
 		\end{axis}
 	\end{tikzpicture}
 	\caption{Доходности цен открытия акций Apple (AAPL) 2021 (\%)}
+	\label{fig::apple_returns_2021}
 \end{figure}
-Данное явление носит название "кластеризация волатильности". Было бы неплохо научиться ее предсказывать, для чего и была разработана модель ARCH и как ее обобщение - модель GARCH. Для большей простоты в понимании рассматриваем первоначально ARCH, а затем - GARCH.
+Данное явление носит название "кластеризация волатильности". Было бы неплохо научиться ее предсказывать, для чего и была разработана модель ARCH \cite{robert1982arch} и как ее обобщение - модель GARCH \cite{bollerslev1986garch}. Для большей простоты в понимании рассматриваем первоначально ARCH, а затем - GARCH.
 \begin{enumerate}
-	\item Пусть изначально есть некоторая модель (неважно ARIMA, ADL, DL, но важно, чтобы исследуемый процесс был стационарен). Тогда формально это записывается так:
+	\item Пусть есть некоторая модель (неважно какая конкретно - Constant, ARIMA, ADL, DL, однако требуем, чтобы исследуемый процесс был стационарен). Тогда, представляем исследуемую модель в формальном виде:
 	\begin{equation}
 		\begin{split}
-			y_t & = \text{некоторая модель} + u_t\\
-			u_t & = \varepsilon_t \cdot \sqrt{\alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2}
+			y_t & = \mu_t + u_t\\
+			\mu_t & \Rightarrow \text{моделирование среднего значения}\\
+			u_t & = \sigma_t \varepsilon_t \\
+			\sigma_t^2 & = \omega + \sum_{j = 1}^p \alpha_j u_{t - j}^2 \Rightarrow \text{моделирование условной дисперсии}
 		\end{split}
 	\end{equation}
-	Где $\varepsilon_t \sim N(0, 1)$, а $u_t$ - еще одна некоторая величина, зависящая от своих предыдущих значений. Тогда, вычисляя условную дисперсию $u_t$ и математическое ожидание соответственно,  получаем:
+	Где $\omega$ - константа, $\mu_t$ - предсказание среднего значения некоторой моделью, $u_t$ - некоторая величина, зависящая от своих предыдущих значений, $\sigma_t$ и $\varepsilon_{t}$, где $\sigma_t$ - показатель характеризующий волатильность, а $\varepsilon_t \sim N(0, 1)$ то есть - случайные шоки. Тогда, вычисляя условную дисперсию $u_t$ и математическое ожидание соответственно, получаем:
 	\begin{equation}
 		\begin{split}
-			\V(u_t) & = \sigma^2_t  = \V(u_t \vert u_{t - 1}, \ldots, u_{t - p}) = \alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2\\
-			\E(\sigma^2_t) & = \sigma^2 = \E\left(\alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2\right) = \\
-			\sigma^2 & = \alpha_0 + \sum_{j = 1}^p \alpha_j \sigma^2\\
-			\sigma^2 & = \frac{\alpha_0}{1 - \sum_{j = 1}^p \alpha_j}
+			\V(u_t) & = \sigma^2_t  = \V(u_t \vert u_{t - 1}, \ldots, u_{t - p}) = \omega + \sum_{j = 1}^p \alpha_j u_{t - j}^2\\
+			\E(\sigma^2_t) & = \sigma^2 = \E\left(\omega + \sum_{j = 1}^p \alpha_j u_{t - j}^2\right) = \omega + \sum_{j = 1}^p \alpha_j \sigma^2\\
+			\sigma^2 & = \frac{\omega}{1 - \sum_{j = 1}^p \alpha_j}
 		\end{split}
 	\end{equation}
-	При этом, в силу неотрицательности дисперсии, необходимо учитывать, что $\alpha_j > 0: j = \overline{1,p}$. Также $\E(\sigma^2_t) = \E(u^2_t) - \E(u_t)\E(u_t) = \sigma^2$. Более того, при этом $\E(u_t) = \E(\varepsilon_t) \cdot \sqrt{\cdot}$, но для большей ясности расписываем $\cov(u_{t}, u_{t - 1} \vert u_{t - 2}, \ldots, u_{t - p}) = \cov(\varepsilon_{t} \cdot \sqrt{\alpha_0 + \alpha_1 u_{t - 1}^2 + \ldots}, \varepsilon_{t - 1} \cdot \sqrt{\cdot}) = \sqrt{\cdot} \cdot \E(\varepsilon_{t}\varepsilon_{t - 1} \cdot \sqrt{\alpha_0 + \alpha_1 u_{t - 1} + \ldots}) - \E(\sqrt{\cdot} \cdot \varepsilon_{t}) \E(\varepsilon_{t - 1}) = \ldots \cdot \E(\varepsilon_{t}) \cdot \E(\varepsilon_{t - 1}) = 0$. Таким образом показано, что $\cov(u_{t}, u_{t - 1}) = 0$, однако появляется закономерный вопрос. \textbf{Q}: Каким образом данная модель поддается оценке? \textbf{A}: Посредством Метода Максимального Правдоподобия.
+	При этом, в силу неотрицательности дисперсии, необходимо учитывать, что $\alpha_j > 0: j = \overline{1,p}$. Также $\E(\sigma^2_t) = \E(u^2_t) - \E(u_t)\E(u_t) = \sigma^2$. Более того, при этом $\E(u_t) = \E(\varepsilon_t) \cdot \sqrt{\cdot}$, но для большей ясности расписываем $\cov(u_{t}, u_{t - 1} \vert u_{t - 2}, \ldots, u_{t - p}) = \cov(\varepsilon_{t} \cdot \sqrt{\omega + \alpha_1 u_{t - 1}^2 + \ldots}, \varepsilon_{t - 1} \cdot \sqrt{\cdot}) = \sqrt{\cdot} \cdot \E(\varepsilon_{t}\varepsilon_{t - 1} \cdot \sqrt{\omega + \alpha_1 u_{t - 1} + \ldots}) - \E(\sqrt{\cdot} \cdot \varepsilon_{t}) \E(\varepsilon_{t - 1}) = \ldots \cdot \E(\varepsilon_{t}) \cdot \E(\varepsilon_{t - 1}) = 0$. Таким образом показано, что $\cov(u_{t}, u_{t - 1}) = 0$, однако появляется закономерный вопрос. \textbf{Q}: Каким образом данная модель поддается оценке? \textbf{A}: Посредством Метода Максимального Правдоподобия.
 	
 	\item Теперь рассматриваем обобщение ARCH на более высокий уровень. Предполагается наличие зависимости между $\sigma^2_t$ и $u^2_{t - p}$, а также предыдущими значениями $\sigma^2_{t - q}$, что в формальном смысле приобретает вид:
 	\begin{equation}
-		\sigma^2_t = \alpha_0 + \sum_{j = 1}^p \alpha_j u_{t - j}^2 + \sum_{i = 1}^q \phi_i \sigma^2_{t - i}
+		\sigma^2_t = \omega + \sum_{j = 1}^p \alpha_j u_{t - j}^2 + \sum_{i = 1}^q \phi_i \sigma^2_{t - i}
 	\end{equation}
-	Существуют и иные дополнения модели: FIGARCH (\myref{link::figarch}), а также TGARCH (Threshold GARCH) и EGARCH (Exponential GARCH) и так далее. Более подробно о них в \cite{verbik_econometrics_garchs}.
 \end{enumerate}
-Таким образом, получается, что данная модель предоставляет возможность предсказывать не саму зависимую переменную ($y_t$), а ее волатильность ($u_t$). Наиболее часто применяется GARCH$(1, 1)$ \cite{hansen2005forecast}. Однако сразу стоит отметить, что при работе с GARCH моделями предполагается, что волатильность симметрична, то есть равновероятно можно отклониться как вниз, так и вверх. Далее для наглядности, действуя по уже отработанному алгоритму, проводим эксперимент на реальных данных: цены акций Apple за 2021 год.\\
+Таким образом, получаем модель, способную предсказывать волатильность доходности, но не саму доходность как таковую. Данное замечание крайне важно в условии моделей условной гетероскедастичности, так как прогнозированием именно показателя доходности выступает выбранная для $\mu_t$ модель. Существуют и иные дополнения модели: FIGARCH (\myref{link::figarch}), а также TGARCH (Threshold GARCH) и EGARCH (Exponential GARCH) и так далее. Более подробно о них в \cite{verbik_econometrics_garchs}. Вывод является то, что данная модель предоставляет возможность предсказывать не саму зависимую переменную ($y_t$), а ее волатильность ($u_t$). Наиболее часто применяется GARCH$(1, 1)$ \cite{hansen2005forecast}. Однако сразу стоит отметить, что при работе с GARCH моделями предполагается, что волатильность симметрична, то есть равновероятно можно отклониться как вниз, так и вверх. Далее для наглядности, действуя по уже отработанному алгоритму, проводим эксперимент на реальных данных: цены акций Apple за 2021 год.\\
 
-\noindent \# TODO: Эксперимент.
+\noindent Глядя на график \myref{fig::apple_returns_2021}, видим, как уже было отмечено ранее, наличие периодов сильной и слабой волатильности. Для этого формально строим PACF как для доходностей, так и для их квадратов. В случае наличия автокорреляции во втором случае и отсутствия ее в первом, получаем необходимое количество лагов в ARCH модели.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=5.1cm]{garch/garch_returns.png}
+	\caption{PACF ряда доходностей (Apple цены открытия 2021)}
+\end{figure}
+\noindent Замечаем, что никаких значимых связей не наблюдается. Строим PACF для квадратов доходностей.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=5.1cm]{garch/garch_returns_sqr.png}
+	\caption{PACF ряда квадратов доходностей (Apple цены открытия 2021)}
+\end{figure}
+\noindent Откуда получаем почти не значимый показатель для 1-ого лага, а этого уже достаточно, чтобы пытаться применить модель ARCH$(1)$. Несмотря на свою наглядность, только что показанный способ является необходимым, но не достаточным условием именно такого лага, значит, далее, основываясь на критерии BIC выбираем лучшую из обученных моделей модель. При этом моделирование среднего значения оставляем как классическое среднее, то есть: $\mu_t \equiv \mu$. Однако для большей уверенности в своих показателях, используем полноценный ряд доходностей компании Apple, начиная с ее выхода на IPO. Показатель доходности вычисляется на основе цен открытия.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=4.5cm]{returns pictures/apple_returns.png}
+	\caption{Доходности Apple (с выхода на IPO по 2022) не в \%}
+\end{figure}
+\noindent Квадраты доходностей соответственно имеют вид:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=4.5cm]{returns pictures/apple_returns_sqr.png}
+	\caption{Квадраты доходностей Apple (с выхода на IPO по 2022) не в \%}
+\end{figure}
+\noindent Таким образом, им соответствующие PACF выглядят:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=4.5cm]{garch/garch_returns_long.png}
+	\caption{PACF ряда доходностей Apple (с выхода на IPO по 2022)}
+\end{figure}
+\noindent Аналогично предыдущему случаю, никаких значимых связей тут тоже не наблюдается. Строим PACF для квадратов доходностей.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm, height=4.5cm]{garch/garch_returns_sqr_long.png}
+	\caption{PACF ряда квадратов доходностей Apple (с выхода на IPO по 2022)}
+\end{figure}
+\noindent А тут уже точно есть четко выраженная автокорреляционная зависимость, что однозначно сигнализирует о необходимости проверки моделей из ARCH семейства. Таким образом, для начала вычисляем GARCH$(p, q)$ такие, что $(p, q) \in \left\{(1, 1), (1, 2), (2, 1), (2, 2)\right\}$, а потом все ARCH$(p): p = \overline{1,10}$. Это делается для лучшего понимания, какая модель наиболее качественно описывает данные.
+
+\input{./source/source_tex/models/garch/garch_models.tex}
+
+
+
+\begin{landscape}
+	\input{./source/source_tex/models/garch/arch_models.tex}
+\end{landscape}
+

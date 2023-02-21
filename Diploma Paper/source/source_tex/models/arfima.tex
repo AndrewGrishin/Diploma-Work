@@ -1,9 +1,9 @@
 \subsubsection{Auto-regressive Fractionally Integrated Moving Average}
 Ранее рассматривалась модель ARIMA(p,d,q), принимавшая вид:
 \begin{equation}
-	\underbrace{\left(1 - \sum_{k = 1}^{p} \alpha_k \cdot B^k\right) \overbrace{(1 - B)^d}^{\text{I}(d)} y_t}_{\text{AR}(p)} = \overbrace{\alpha_0}^{\text{const}} + \underbrace{\left(\sum_{j = 1}^{q} \beta_j \cdot B^j\right) \varepsilon_{t}}_{\text{MA}(q)}
+	\underbrace{\left(1 - \sum_{k = 1}^{p} \alpha_k B^k\right) \overbrace{(1 - B)^d}^{\text{I}(d)} y_t}_{\text{AR}(p)} = \overbrace{\alpha_0}^{\text{const}} + \underbrace{\left(\sum_{j = 1}^{q} \beta_j B^j\right) \varepsilon_{t}}_{\text{MA}(q)}
 \end{equation}
-Для удобства записи, вводим переобозначение $\alpha_p(B) = \left(1 - \sum_{k = 1}^{p} \alpha_k \cdot B^k\right)$, а также $\beta_{q}(B) = \left(\sum_{j = 1}^{q} \beta_j \cdot B^j\right) \varepsilon_{t}$, что преобразует вышенаписанное выражение:
+Для удобства записи, вводим переобозначение $\alpha_p(B) = \left(1 - \sum_{k = 1}^{p} \alpha_k B^k\right)$, а также $\beta_{q}(B) = \left(\sum_{j = 1}^{q} \beta_j B^j\right) \varepsilon_{t}$, что преобразует вышенаписанное выражение:
 \begin{equation}
 	\alpha_p(B) (1 - B)^d y_t = \alpha_0 + \beta_{q}(B) \varepsilon_{t}
 \end{equation}
@@ -14,7 +14,7 @@ ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = 
 \begin{equation}
 	\begin{split}
 		(1 - B)^{-d} & = 1 + \sum_{p}^{\infty} \frac{(-d)\cdot \ldots \cdot (-d -p + 1)}{p!} (-B)^{p}\\
-		(1 - B)^{-d} & = (1 - B)^{-d} = 1 + \sum_{p}^{\infty} \frac{\prod_{i = 1}^{p}(-d - i + 1)}{p!} (-B)^{p}\\
+		(1 - B)^{-d} & = 1 + \sum_{p}^{\infty} \frac{\prod_{i = 1}^{p}(-d - i + 1)}{p!} (-B)^{p}\\
 		(1 - B)^{-d} & = 1 + \sum_{p = 1}^{\infty} h_pL^p\\
 		h_p & = \frac{\Gamma(p + d)}{\Gamma(d)\Gamma(p + 1)}
 	\end{split}
@@ -24,7 +24,7 @@ ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = 
 	\text{ARFIMA}(0, d, 0): (1 - B)^d y_t = \varepsilon_{t} \Rightarrow y_t = \sum_{j = 0}^{\infty}h_j \varepsilon_{t - j}
 \end{equation}
 \begin{theorem}[Основные свойства I$(d)$ процесса \cite{hosking_1981}]
-	\textbf{Если}: $d < 0.5$, \textbf{то}: процесс стационарен. \textbf{Если}: $d > 0.5$, \textbf{то}: процесс на является стационарным. \textbf{Если}: $d > -0.5$, \textbf{то} разложение \ref{equation::arfima_0_1_0} обратимо. \textbf{Если}: $d \in (-0.5, 0.5)$, \textbf{то}: 1) ковариационная функция: $$y_t: \gamma_k = \frac{\Gamma(1 - 2d) \Gamma(k + d)}{\Gamma(d)\Gamma(1 - d)\Gamma(k + 1 - d)} \sigma^2_{\varepsilon}$$ 2) корреляционная функция при $k \to \infty$ ведет себя как: $$\rho_k \sim \frac{\Gamma(1 - d)}{\Gamma(d)}k^{2d - 1}$$
+	\textbf{Если}: $d < 0.5$, \textbf{то}: процесс стационарен. \textbf{Если}: $d > 0.5$, \textbf{то}: процесс не является стационарным. \textbf{Если}: $d > -0.5$, \textbf{то} разложение (\ref{equation::arfima_0_1_0}) обратимо. \textbf{Если}: $d \in (-0.5, 0.5)$, \textbf{то}: 1) ковариационная функция: $$y_t: \gamma_k = \frac{\Gamma(1 - 2d) \Gamma(k + d)}{\Gamma(d)\Gamma(1 - d)\Gamma(k + 1 - d)} \sigma^2_{\varepsilon}$$ 2) корреляционная функция при $k \to \infty$ ведет себя как: $$\rho_k \sim \frac{\Gamma(1 - d)}{\Gamma(d)}k^{2d - 1}$$
 \end{theorem}
 При этом важно заметить, что условия $d \in (-0.5, 0.5)$ всегда можно добиться, применив необходимое количество раз обычное дифференцирование ряда. Все вышеизложенное - преамбула к процессам с долгосрочной памятью.
 \begin{definition}[Процесс с длинной памятью]
@@ -65,7 +65,7 @@ ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = 
 	\end{equation}
 	Где $R_n$ - размах, $S_n$ - стандартное отклонение, $c$ - константа, $H$ - показатель Херста (часто называется экспонента Херста).
 \end{enumerate}
-Выводы: 1) \textbf{Если}: $H > 0.5$ и значима, \textbf{то}: процесс называется персистентным, то есть следующие друг за другом приращения процесса имеют тенденцию сохранять знак и имеют положительную автокорреляцию. \textbf{Если}: $H = 0.5$ и значима, \textbf{то}: тенденции не выражено (например, белый шум). \textbf{Если}: $H < 0.5$, \textbf{то}: процесс антиперсистентен и имеет отрицательную автокорреляцию (любая тенденция стремится смениться на противоположную). Таким образом, получаем алгоритм действий:
+Выводы: 1) \textbf{Если}: $H > 0.5$ и значима, \textbf{то}: процесс называется персистентным, то есть следующие друг за другом приращения процесса имеют тенденцию сохранять знак и имеют положительную автокорреляцию. \textbf{Если}: $H = 0.5$ и значима, \textbf{то}: тенденции не выражены (например, белый шум). \textbf{Если}: $H < 0.5$, \textbf{то}: процесс антиперсистентен и имеет отрицательную автокорреляцию (любая тенденция стремится смениться на противоположную). Таким образом, получаем алгоритм действий:
 \begin{enumerate}
 	\item Рисуем ACF для исходного процесса. Если ACF убывает гиперболически, то возможно, что процесс дробно-интегрированный.
 	\item Доводим ряд до стационарности путем классического дифференцирования.
@@ -81,7 +81,7 @@ ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = 
 		\hat{\gamma}_{jt} & = \frac{1}{t} \sum_{i = j + 1}^t (y_i - \overline{y}_t)(y_{i - j} - \overline{y}_t)
 	\end{split}
 \end{equation}
-Где $\hat{\sigma}^2_t$ и $\hat{\gamma}_j$ - дисперсия и автоковариация для $y$. Тестирование наличия LR памяти имеет \textbf{H0}: SR память.Критические значения для данной статистики другие, а именно:
+Где $\hat{\sigma}^2_t$ и $\hat{\gamma}_j$ - дисперсия и автоковариация для $y$. Тестирование наличия LR памяти имеет \textbf{H0}: SR память. Критические значения для данной статистики другие, а именно:
 \begin{table}[H]
 	\centering
 	\begin{tabular}{c|cc}
@@ -99,7 +99,7 @@ ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = 
 \begin{enumerate}
 	\item Дан ряд $y_t: t = \overline{1, T}$.
 	\item Вычисляем $y^{\text{cum}}_t = \sum_{i = 1}^t (y_i - \overline{y}_t)$.
-	\item Разбиваем куммулятивный ряд на $N$ сегментов длины $\delta$.
+	\item Разбиваем кумулятивный ряд на $N$ сегментов длины $\delta$.
 	\item Для каждого сегмента вычисляем:
 	\begin{equation}
 		F_i(\delta) = \sqrt{\frac{1}{\delta} \sum_{t = i \cdot \delta + 1}^{(i + 1) \cdot \delta} \left(y_t^{\text{cum}} - y^{\text{trend}}_t \right)^2}: i = \overline{0, N - 1}

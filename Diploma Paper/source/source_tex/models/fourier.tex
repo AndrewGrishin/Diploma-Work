@@ -1,1 +1,46 @@
 \subsubsection{Fourier analysis} \label{link::fourier_analysis}
+\noindent Теперь рассматриваем второе определение стационарности (\myref{def::signal_stationarity}). То есть в настоящий момент под временным рядом понимается некоторый сигнал, полученный путем записи данных, характеризующих некоторый объект в конкретные моменты времени.
+
+Задаемся вопросом \textbf{Q}: Можно ли как-то представить функцию вида $f(t)$ (исследуемый сигнал) в виде конечного или бесконечного наложения синусоид (под синусоидой понимается как косинус, так и синус). \textbf{A}: 1) Замечаем, что струна сама по себе при условии фиксированных концов как раз колеблется по синусоиде. Причем на ее длине всегда умещается конечное количество волн (как раз условие закрепленности струны и обеспечивает данный факт). Сама же простейшая форма колебания струны называется "гармоникой". Отсюда и название анализа: гармонический анализ. Но тогда не очевидно, можно ли представить сложную форму колебания в виде простейшей? 2) Выводим разложение в ряд Фурье и соответственно алгоритм FFT (Fast Fourier Transform).
+
+Пусть задан некоторый периодический сигнал вида: $f: \R \to \R$ с периодом T. Тогда угадываем внешний вид разложения, а далее - формальным способом вычисляем коэффициенты в данном разложении. Нам необходимо, чтобы исходный сигнал был представим в виде:
+\begin{equation} \label{equation::fourier_approximation}
+	f(t) = \frac{a_0}{2} + \sum_{k = 1}^{\infty} \left\{a_k\cos(k \omega t) + b_k\sin(k \omega t)\right\}
+\end{equation}
+Вспоминая определение ортогональности векторов из $\R^n$, вводим по аналогии операцию ортогональности над функциями и соответственно получаем:
+\begin{equation}
+	p = \int_0^T g(t) \cdot f(t) \; \text{d}t
+\end{equation}
+Тогда в силу того, что взяты были функции $\cos(\cdot)$ и $\sin(\cdot)$, проверяем на ортогональность:
+\begin{enumerate}
+	\item $\sin(k\omega t), \sin(l \omega t)$.
+	\begin{equation}
+		p = \int_{0}^T \sin(k\omega t)\sin(l \omega t) \; \text{d}t =
+		\left\{
+		\begin{array}{rl}
+			0 & \text{, } k \ne l\\
+			\frac{T}{2} & \text{, } k = l
+		\end{array}
+		\right.
+	\end{equation}
+	
+	\item $\cos(k\omega t), \cos(l \omega t)$.
+	\begin{equation}
+		p = \int_{0}^T \cos(k\omega t)\cos(l \omega t) \; \text{d}t =
+		\left\{
+		\begin{array}{rl}
+			0 & \text{, } k \ne l\\
+			\frac{T}{2} & \text{, } k = l
+		\end{array}
+		\right.
+	\end{equation}
+
+	\item $\cos(k\omega t), \sin(l \omega t)$.
+	\begin{equation}
+		p = \int_{0}^T \cos(k\omega t)\sin(l \omega t) \; \text{d}t = 0
+	\end{equation}
+\end{enumerate}
+Тогда, опираясь на \ref{equation::fourier_approximation}, получаем формулы для коэффициентов:
+\begin{enumerate}
+	\item 
+\end{enumerate}

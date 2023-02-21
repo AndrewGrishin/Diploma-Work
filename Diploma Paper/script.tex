@@ -17,6 +17,8 @@
 \usepackage{pgfplots} % для построения графиков
 \pgfplotsset{compat=1.9} % используется последняя версия построителя
 \usepackage{graphicx} % для включения в работу построенных графиков
+\usepackage{lscape} % для поворота страницы
+\usepackage{longtable}
 \graphicspath{ {./source/source_photos/} }
 
 \newtheorem{theorem}{Теорема} % для определения теорем
@@ -27,6 +29,8 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\cov}{\text{cov} }
 \newcommand{\myref}[1]{\ref{#1} стр. \pageref{#1}}
+\newcommand{\setval}[3]{\shortstack{$#1$#2 \\ ($#3$)}} % для отображения сводных таблиц
+
 
 \AtBeginDocument{\renewcommand\contentsname{}}
 
