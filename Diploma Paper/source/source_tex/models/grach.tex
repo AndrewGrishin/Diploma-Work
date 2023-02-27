@@ -52,7 +52,7 @@
 	При этом, в силу неотрицательности дисперсии, необходимо учитывать, что $\alpha_j > 0: j = \overline{1,p}$. Также $\E(\sigma^2_t) = \E(u^2_t) - \E(u_t)\E(u_t) = \sigma^2$. Более того, при этом $\E(u_t) = \E(\varepsilon_t) \cdot \sqrt{\cdot}$, но для большей ясности расписываем $\cov(u_{t}, u_{t - 1} \vert u_{t - 2}, \ldots, u_{t - p}) = \cov(\varepsilon_{t} \cdot \sqrt{\omega + \alpha_1 u_{t - 1}^2 + \ldots}, \varepsilon_{t - 1} \cdot \sqrt{\cdot}) = \sqrt{\cdot} \cdot \E(\varepsilon_{t}\varepsilon_{t - 1} \cdot \sqrt{\omega + \alpha_1 u_{t - 1} + \ldots}) - \E(\sqrt{\cdot} \cdot \varepsilon_{t}) \E(\varepsilon_{t - 1}) = \ldots \cdot \E(\varepsilon_{t}) \cdot \E(\varepsilon_{t - 1}) = 0$. Таким образом показано, что $\cov(u_{t}, u_{t - 1}) = 0$, однако появляется закономерный вопрос. \textbf{Q}: Каким образом данная модель поддается оценке? \textbf{A}: Посредством Метода Максимального Правдоподобия.
 	
 	\item Теперь рассматриваем обобщение ARCH на более высокий уровень. Предполагается наличие зависимости между $\sigma^2_t$ и $u^2_{t - p}$, а также предыдущими значениями $\sigma^2_{t - q}$, что в формальном смысле приобретает вид:
-	\begin{equation}
+	\begin{equation} \label{link::garch}
 		\sigma^2_t = \omega + \sum_{j = 1}^p \alpha_j u_{t - j}^2 + \sum_{i = 1}^q \phi_i \sigma^2_{t - i}
 	\end{equation}
 \end{enumerate}

@@ -15,17 +15,17 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Generalized Auto-Regressive Conditional Heteroskedasticity}{22}{subsubsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.4}Auto-regressive Fractionally Integrated Moving Average}{30}{subsubsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.5}Fractionally Integrated GARCH}{38}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{38}{subsubsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{38}{subsubsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{39}{subsubsection.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{39}{subsubsection.2.2.9}%
-\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{39}{paragraph.2.2.9.1}%
-\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{39}{paragraph.2.2.9.2}%
-\contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{39}{paragraph.2.2.9.3}%
+\contentsline {subsubsection}{\numberline {2.2.6}Singular Spectrum Analysis}{39}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Fourier analysis}{39}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Wavelet analysis}{40}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Neural Networks}{40}{subsubsection.2.2.9}%
+\contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{40}{paragraph.2.2.9.1}%
+\contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{40}{paragraph.2.2.9.2}%
+\contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{40}{paragraph.2.2.9.3}%
 \contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: GD семейство}{40}{paragraph.2.2.9.4}%
-\contentsline {section}{\numberline {3}Описание данных и эксперимент}{40}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{40}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{40}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Обсуждение выводов}{40}{section.4}%
-\contentsline {section}{\numberline {5}Заключение}{40}{section.5}%
-\contentsline {section}{Список литературы}{44}{section*.2}%
+\contentsline {section}{\numberline {3}Описание данных и эксперимент}{41}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{41}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{41}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Обсуждение выводов}{41}{section.4}%
+\contentsline {section}{\numberline {5}Заключение}{41}{section.5}%
+\contentsline {section}{Список литературы}{45}{section*.2}%

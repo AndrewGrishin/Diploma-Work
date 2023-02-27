@@ -11,7 +11,7 @@
 
 ARFIMA$(0, d, 0) \Rightarrow (1 - B)^{d}y_t = \varepsilon_{t} \Rightarrow y_t = (1 - B)^{-d}\varepsilon_t = \sum_{j = 0}^{\infty} h_j\varepsilon_{t - j}$, основываясь на стационарности процесса и разложении Вольда \cite{wold_decomposition}, представляем AR$(1)$ в виде MA$(\infty)$. Далее, воспользовавшись разложением в ряд Тейлора для $(1 - B)^{-d}$, получаем:
 
-\begin{equation}
+\begin{equation} \label{link::fractual_difference}
 	\begin{split}
 		(1 - B)^{-d} & = 1 + \sum_{p = 1}^{\infty} \frac{(-d)\cdot \ldots \cdot (-d -p + 1)}{p!} (-B)^{p}\\
 		(1 - B)^{-d} & = 1 + \sum_{p = 1}^{\infty} \frac{\prod_{i = 1}^{p}(-d - i + 1)}{p!} (-B)^{p}\\

@@ -1,1 +1,25 @@
 \subsubsection{Fractionally Integrated GARCH} \label{link::figarch}
+Пользуясь только что введенным методом дифференцирования рядов в фрактальном пространстве, анализируем поведения модели GARCH и переходим к так называемой FIGARCH. Первоначально имеем уравнение для GARCH (\myref{link::garch}). Однако теперь имеет смысл переписать его в более компактном виде:
+\begin{equation}
+	\sigma^2_t = \omega + \alpha_p(B)u^2_t + \beta_q(B)\sigma^2_t
+\end{equation}
+Где $\alpha(B)_p$ и $\beta(B)_q$ - полиному соответствующих степеней от лагового оператора. Далее, пользуясь переобозначением вида $v_t = u_t^2 - \sigma^2_t = (\varepsilon^2_{t} - 1)\sigma^2_t: \varepsilon_{t} \sim N(0, 1)$, получаем эквивалентную запись \cite{tayefi2012overview}:
+\begin{equation}
+	\begin{split}
+		u_t^2 & = \omega + \alpha_p(B)u_t^2 + \beta_q(B)u_t^2 - \beta_q(B)v_t + v_t\\
+		\left[1 - \alpha_p(B) - \beta_q(B)\right] u_t^2 & = \omega + \left[1 - \beta_q(B)\right]v_t
+	\end{split}
+\end{equation}
+Подобная запись уже очень похода на ARMA, однако определяется данная модель иначе, а точнее - ARMA$(m, q): m = \max(p, q), v_t = u_t^2 - \sigma^2_t$. Интересно, что процесс $v_t$ интерпретируется как шоки для уловной дисперсии, так как $\E(v_t) = \E(u_t^2 - \sigma^2_t) = \E(u_t^2) - \E(\sigma^2_t) = 0$. Следовательно интегрированный GARCH процесс записывается как:
+\begin{equation} \label{link::approx_figarch}
+	\left[1 - \alpha_p(B) - \beta_q(B)\right] (1 - B) u_t^2 = \omega + \left[1 - \beta_q(B)\right]v_t
+\end{equation}
+Финальный штрихом при переходе от GARCH к FIGARCH является замена 1-й разности в $(1 - B)$ а дробно интегрированную, где $(1 - B)^d: d \in (0, 1)$. В итоге выражение \ref{link::approx_figarch} становится:
+\begin{equation} \label{link::approx_figarch}
+	\left[1 - \alpha_p(B) - \beta_q(B)\right] (1 - B)^d u_t^2 = \omega + \left[1 - \beta_q(B)\right]v_t
+\end{equation}
+Таким образом, получаем модель, способную описывать более сложные временные колебания в данных, в том числе и финансовых, по сравнению с другими GARCH-подобными моделями \cite{davidson2004moment}. Также отмечаем, что $(1 - B)^d$ можно расписать не только так, как было сделано для модели ARFIMA (\myref{link::fractual_difference}), но и в виде:
+\begin{equation}
+	(1 - B)^d = \sum_{k = 0}^\infty \frac{\Gamma(k - d)}{\Gamma(k + 1)\Gamma(-d)}B^k
+\end{equation}
+Для оценки параметров данной модели используется Maximum-Likelihood Estimation (Метод Максимального Правдоподобия), однако, исходя из реальных исследований, имеем, что предположение о нормальном распределение остатков в случае с методом MLE (ММП) приводит к более плохому результату, чем применение устойчивого метода quasi-MLE, описанного в \cite{weiss1986asymptotic}. Аналогично всему предыдущем проводим эксперимент, основываясь на цены открытия акций Apple.

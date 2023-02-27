@@ -30,6 +30,12 @@ Christiano.
 \newblock {\em Northwestern University: FINC-520}, " ".
 \newblock \url{https://faculty.wcas.northwestern.edu/lchrist/finc520/wold.pdf}.
 
+\bibitem{davidson2004moment}
+James Davidson.
+\newblock Moment and memory properties of linear conditional heteroscedasticity
+  models, and a new model.
+\newblock {\em Journal of Business \& Economic Statistics}, 22(1):16--29, 2004.
+
 \bibitem{robert1982arch}
 Robert~F. Engle.
 \newblock Autoregressive conditional heteroscedasticity with estimates of the
@@ -173,6 +179,13 @@ Pantelis Tassopoulos and Yorgos Protonotarios.
 \newblock Brownian motion \& the stochastic behavior of stocks.
 \newblock {\em Journal of Mathematical Finance}, 12(1):138--149, 2021.
 
+\bibitem{tayefi2012overview}
+Maryam Tayefi and TV~Ramanathan.
+\newblock An overview of figarch and related time series models.
+\newblock {\em Austrian journal of statistics}, 41(3):175--196, 2012.
+\newblock
+  \url{https://www.ajs.or.at/index.php/ajs/article/view/vol41%2C%20no3%20-%202}.
+
 \bibitem{ewma}
 CFI Team.
 \newblock Exponentially weighted moving average (ewma).
@@ -195,6 +208,11 @@ Constantinos~E. Vorlow.
   2006.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0167268106000692}.
+
+\bibitem{weiss1986asymptotic}
+Andrew~A Weiss.
+\newblock Asymptotic theory for arch models: estimation and testing.
+\newblock {\em Econometric theory}, 2(1):107--131, 1986.
 
 \bibitem{hac_standard_errors}
 Kenneth~D. West.
