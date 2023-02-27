@@ -26,10 +26,104 @@
 
 \input{./source/source_tex/models/figarch/figarch_models.tex}
 
-\noindent Замечаем, что в каждой модели параметр $d$ значим на $1\%$-ом уровне и, если вычислять значение экспоненты Херста, то в каждой случае получаем персистентный процесс. Однако как и в предыдущих моделях, информационный критерий BIC позволяет выявить лучшую с точки зрения описания данных - FIGARCH$(1, 0.329, 1)$, что даже меньше, чем в случае с моделью GARCH$(1, 1)$ (\myref{link::garchs}), где BIC = $50'056$. То есть полученная модель еще качественнее описывает данные. Смотрим на построенные ею прогнозные значения волатильности и показателя доходности.
+\noindent Замечаем, что в каждой модели параметр $d$ значим на $1\%$-ом уровне и, если вычислять значение экспоненты Херста, то в каждой случае получаем персистентный процесс. Однако как и в предыдущих моделях, информационный критерий BIC позволяет выявить лучшую с точки зрения описания данных - FIGARCH$(1, 0.329, 1)$, что даже меньше, чем в случае с моделью GARCH$(1, 1)$ (\myref{link::garchs}), где BIC = $50'056$. То есть полученная модель еще качественнее описывает данные. Однако также в сводной таблице имеется некоторый показатель $\nu$, относящийся к обобщенному нормальному распределению, плотность которого в общем виде задается формулой:
+\begin{equation}
+	p_\xi(x) = \frac{\nu}{2 \sigma \Gamma(1 / \nu)} \exp \left(-\left\{|x - \mu|/\sigma\right\}^\nu \right)
+\end{equation}
+Где $\sigma$ - фактор сжатия/разжатия, $\mu$ - расположения распределения относительно среднего значения, а $\nu$ - это некоторый гиперпараметр формы. Графически Generalized Normal Distribution (GND) в стандартном случае, то есть при $\mu = 0$ и $\sigma = 1$, имеет вид:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=17cm, height=6.25cm]{figarch/predicton_long.png}
+	\begin{tikzpicture}
+		\begin{axis}[
+			grid = both,
+			legend pos = north west,
+			minor tick num = 1,
+			major grid style = {lightgray},
+			minor grid style = {lightgray!25},
+			title= {$f(x, \nu) = \frac{\nu}{2 \Gamma(1 / \nu)} \exp \left(-|x|^\nu \right)$},
+			width = \textwidth,
+			height = 0.5 \textwidth,
+			xmin=-5, xmax=5,
+			ymin=0, ymax=0.6,
+			line width=0.3mm
+			]
+			\addplot table [
+			x=x, 
+			y=y_0_5, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			%\legend{AAPL 2021};
+			
+			\addplot table [
+			x=x, 
+			y=y_1_0, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			%\legend{EWMA $\beta = 0.1$};
+			
+			\addplot table [
+			x=x, 
+			y=y_1_5, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			%\legend{EWMA $\beta = 0.1$};
+			
+			\addplot table [
+			x=x, 
+			y=y_2_0, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			%\legend{EWMA $\beta = 0.3$};
+			
+			\addplot table [
+			x=x, 
+			y=y_2_5, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			%\legend{EWMA $\beta = 0.5$};
+			
+			\addplot table [
+			x=x, 
+			y=y_3_0, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			
+			\addplot table [
+			x=x, 
+			y=y_3_5, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			
+			\addplot table [
+			x=x, 
+			y=y_4_0, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			
+			\addplot table [
+			x=x, 
+			y=y_8_0, 
+			col sep=comma,
+			mark={},
+			] {./source/source_csv/Illustration data/figarch/gennormal_dist.csv};
+			
+			\legend{$\nu = 0.5$, $\nu = 1.0$, $\nu = 1.5$, $\nu = 2.0$, $\nu = 2.5$, $\nu = 3.0$, $\nu = 3.5$, $\nu = 4.0$, $\nu = 8.0$};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{GND$(\mu = 0, \sigma = 1)$}
+\end{figure}
+\noindent Подобное необычное распределение использовано для наиболее точного описания данных посредством введения предпосылки о распределении остатков модели. Теперь смотрим на построенные ею (моделью) прогнозные значения волатильности и показателя доходности.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=17cm]{figarch/predicton_long.png}
 	\caption{Предсказания доходности (в \%) и волатильности моделью FIGARCH$(1, 0.329, 1)$}
 \end{figure}
 \noindent И далее смотрим на прогнозирование показателя условной дисперсии:
