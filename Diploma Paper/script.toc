@@ -24,7 +24,7 @@
 \contentsline {paragraph}{\numberline {2.2.9.1}Multilayer Perceptron}{53}{paragraph.2.2.9.1}%
 \contentsline {paragraph}{\numberline {2.2.9.2}Recurrent Neural Network}{53}{paragraph.2.2.9.2}%
 \contentsline {paragraph}{\numberline {2.2.9.3}Wavelet Network}{53}{paragraph.2.2.9.3}%
-\contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: AdamW vs Lions}{53}{paragraph.2.2.9.4}%
+\contentsline {paragraph}{\numberline {2.2.9.4}Алгоритмы обучения: AdamW vs Lions}{54}{paragraph.2.2.9.4}%
 \contentsline {section}{\numberline {3}Описание данных и эксперимент}{54}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{54}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{54}{subsection.3.2}%
