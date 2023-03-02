@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{abdi2010pca}
+Herv{\'e} Abdi and Lynne~J Williams.
+\newblock Principal component analysis.
+\newblock {\em Wiley interdisciplinary reviews: computational statistics},
+  2(4):433--459, 2010.
+\newblock
+  \url{https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wics.101?casa_token=XWNhAZRsOvwAAAAA%3A9MluOo44ZYdIp-JUVbOaEdBFhz4M4g7OOcZF4P13EaRJVsS4yFBm_j7aOF0_wsaRorICXpwUaa5bGg}.
+
 \bibitem{alexandridis2014wavelet}
 Antonios~K Alexandridis and Achilleas~D Zapranis.
 \newblock {\em Wavelet neural networks: with applications in financial
@@ -35,6 +43,7 @@ James Davidson.
 \newblock Moment and memory properties of linear conditional heteroscedasticity
   models, and a new model.
 \newblock {\em Journal of Business \& Economic Statistics}, 22(1):16--29, 2004.
+\newblock \url{https://www.tandfonline.com/doi/abs/10.1198/073500103288619359}.
 
 \bibitem{robert1982arch}
 Robert~F. Engle.
@@ -69,6 +78,13 @@ Clive~WJ Granger and Roselyne Joyeux.
   differencing.
 \newblock {\em Journal of time series analysis}, 1(1):15--29, 1980.
 
+\bibitem{catarpillar_ssa}
+GistaT Group.
+\newblock Гусеница.
+\newblock {\em Анализ и прогноз временных рядов},
+  1996 -2020.
+\newblock \url{https://www.gistatgroup.com/gus/index.html}.
+
 \bibitem{hansen2005forecast}
 Peter~R Hansen and Asger Lunde.
 \newblock A forecast comparison of volatility models: does anything beat a
@@ -102,6 +118,14 @@ Harold~Edwin Hurst.
 \newblock {\em Transactions of the American society of civil engineers},
   116(1):770--799, 1951.
 
+\bibitem{kuang2020efficient}
+Weichao Kuang, Shanjin Wang, Yingxin Lai, and Wing-Kuen Ling.
+\newblock Efficient and adaptive signal denoising based on multistage singular
+  spectrum analysis.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 70:1--20,
+  2020.
+\newblock \url{https://ieeexplore.ieee.org/document/9144260}.
+
 \bibitem{kpss_unit_root_test}
 Dongin Lee and Peter Schmidt.
 \newblock On the power of the kpss test of stationarity against
@@ -118,6 +142,22 @@ L.S. Lima and L.L.B. Miranda.
   490:828--833, 2018.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0378437117308324?casa_token=rzOzlZw26ZUAAAAA:TLYp15lOen3WJC65uWCpHNNGItqli5Iuqa5yb5LSZKPj5mznOHBbH3r_CwTyjDHAe2ZYaVGA}.
+
+\bibitem{lin2019grouping}
+Peiru Lin, Weichao Kuang, Yuwei Liu, and Bingo Wing-Kuen Ling.
+\newblock Grouping and selecting singular spectrum analysis components for
+  denoising via empirical mode decomposition approach.
+\newblock {\em Circuits, Systems, and Signal Processing}, 38:356--370, 2019.
+\newblock
+  \url{https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s00034-018-0861-1&casa_token=j16klF3GLMwAAAAA:sEoR2U4bU7jtZqVWbBS_ZBSjGg-C4ES6ejLyFMJFt2OoWELIug0mOWykxeEFr5nIhxAowzMRQkzMUoc}.
+
+\bibitem{lin2016grouping}
+Peiru Lin, Weichao Kuang, Chuqi Yang, and Wing-Kuen Ling.
+\newblock Grouping singular spectrum analysis components via mixed integer
+  quadratic programming.
+\newblock {\em 2016 IEEE International Conference on Consumer Electronics-China
+  (ICCE-China)}, pages 1--3, 2016.
+\newblock \url{https://ieeexplore.ieee.org/abstract/document/7849753}.
 
 \bibitem{andrew1991longterm}
 Andrew~W. Lo.
@@ -137,6 +177,13 @@ Alfred Marshall.
 \newblock {\em Elements of economics of industry: being the first volume of
   Elements of Economics}, volume~1.
 \newblock Macmillan, 1903.
+
+\bibitem{martin2012svd}
+Carla~D Martin and Mason~A Porter.
+\newblock The extraordinary svd.
+\newblock {\em The American Mathematical Monthly}, 119(10):838--851, 2012.
+\newblock
+  \url{https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.119.10.838}.
 
 \bibitem{word2vec_2013}
 Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
@@ -209,10 +256,19 @@ Constantinos~E. Vorlow.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0167268106000692}.
 
+\bibitem{wang2015selection}
+Rui Wang, Hong-Guang Ma, Guo-Qing Liu, and Dong-Guang Zuo.
+\newblock Selection of window length for singular spectrum analysis.
+\newblock {\em Journal of the Franklin Institute}, 352(4):1541--1560, 2015.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/abs/pii/S0016003215000290}.
+
 \bibitem{weiss1986asymptotic}
 Andrew~A Weiss.
 \newblock Asymptotic theory for arch models: estimation and testing.
 \newblock {\em Econometric theory}, 2(1):107--131, 1986.
+\newblock
+  \url{https://www.cambridge.org/core/journals/econometric-theory/article/abs/asymptotic-theory-for-arch-models-estimation-and-testing/ECA9F733113B65440B23709FA7CC4BDF}.
 
 \bibitem{hac_standard_errors}
 Kenneth~D. West.

@@ -18,11 +18,15 @@
 \pgfplotsset{compat=1.9} % используется последняя версия построителя
 \usepackage{graphicx} % для включения в работу построенных графиков
 \usepackage{lscape} % для поворота страницы
-\usepackage{longtable}
+\usepackage{longtable} % для длинных таблиц
+\usepackage{verbatim} % для многострочных комментарией
+\usepackage{amsthm} % для оформления доказательств
+\usepackage{algorithm, algpseudocode} % для оформления псевдо кода
 \graphicspath{ {./source/source_photos/} }
 
 \newtheorem{theorem}{Теорема} % для определения теорем
 \newtheorem{definition}{Определение} % для определения определений
+\newtheorem{lemma}{Лемма} % для определения лемм
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\V}{\mathbb{V}}
 \newcommand{\R}{\mathbb{R}}
