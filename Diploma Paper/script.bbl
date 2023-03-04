@@ -239,6 +239,13 @@ CFI Team.
 \newblock {\em Corporative Finance Institute (CFI)}, 2023.
 \newblock url: \url{https://corporatefinanceinstitute.com/about-cfi/}.
 
+\bibitem{penn2016orthogonal}
+Pennsylvania~State University.
+\newblock Orthogonal functions and fourier series.
+\newblock {\em Pennsylvania State University}, 2016.
+\newblock
+  \url{https://www.personal.psu.edu/~bwo1/courses/Dennis/Chapter11-1.pdf}.
+
 \bibitem{attention_transformers}
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
   Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
@@ -302,6 +309,17 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
 \newblock {\em Спорная область между двумя
   мирами}.
 \newblock Strelbytskyy Multimedia Publishing, 2018.
+
+\bibitem{mipt2021string}
+О.И.~Смирнова П.В.~Попов.
+\newblock Изучения Колебаний Струны.
+\newblock {\em Федеральное государственное
+  автономное образовательное учреждение
+  высшего образования <<Московский
+  физико-технический институт
+  (национальный исследовательский
+  университет)>>}, 2021.
+\newblock \url{https://mipt.ru/education/chair/physics/S_I/lab/string_145.pdf}.
 
 \bibitem{fractal_market}
 АС Палювина.
