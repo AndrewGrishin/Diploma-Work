@@ -89,7 +89,14 @@
 \begin{equation}
 	f(t) = \sum_{k = -\infty}^{\infty} c_k \exp(i k \omega t)
 \end{equation}
-Однако тут интерес представляют сами коэффициенты $c_k$, так как именно они и являются коэффициентами Фурье при проецировании на базисные функции. Вспоминаем, что ранее делалась предпосылка, что сигнал $f(t)$ является периодическим. \textbf{Q}: Как быть в противном случае? \textbf{A}: Необходимо сам период устремить к $\infty$. Но прежде подставляем вместо некоторой частоты $\omega$ конкретное значение: $\omega = k \Delta \omega$, где $\Delta \omega = \pi / T$. Следовательно, $c_k = \langle f, \psi_k\rangle / (2 \pi)$, где $\psi_k \equiv \exp(i k t)$. Значит:
+Однако тут интерес представляют сами коэффициенты $c_k$, так как именно они и являются коэффициентами Фурье при проецировании на базисные функции. 
+\begin{equation}
+	\begin{split}
+		c_k & = \frac{a_k - i b_k}{2} = \frac{1}{\cancel{2}} \frac{\cancel{2}}{T} \int_0^T f(t) \cos(k \omega t) - f(t) \sin(k \omega t) \; dt\\
+		& = \frac{1}{2 T} \int_{-T}^T f(t) \exp(-i k \omega t) \; dt
+	\end{split}
+\end{equation}
+Вспоминаем, что ранее вводилась предпосылка, относительно периодичности сигнала $f(t)$. \textbf{Q}: Как быть в противном случае? \textbf{A}: Необходимо сам период устремить к $\infty$. Но прежде подставляем вместо некоторой частоты $\omega$ конкретное значение: $\omega = k \Delta \omega$, где $\Delta \omega = \pi / T$. Следовательно, $c_k = \langle f, \psi_k\rangle / (2 \pi)$, где $\psi_k \equiv \exp(i k t)$. Значит:
 \begin{equation}
 	\begin{split}
 		f(t) & = \lim_{\Delta \omega \to 0} \sum_{k = -\infty}^{\infty} \frac{\Delta \omega}{2 \pi} \left[\int_{-\pi / \Delta \omega}^{\pi / \Delta \omega} f(\xi) \exp(-i k \Delta \omega \xi) \; d \xi\right] \exp(i k \Delta \omega)\\
@@ -97,5 +104,21 @@
 \end{equation}
 Но подобное выражение, путем вычисления предела, превращается в:
 \begin{equation}
-	f(t) = \int_{-\infty}^{\infty} \frac{1}{2\pi} \underbrace{\left\{\int_{-\infty}^{\infty} f(\xi) \exp(-i \omega \xi) \; d \xi \right\}}_{\hat{f}(\omega)} \exp(i \omega t) \; d \omega
+	\begin{split}
+		f(t) & = \int_{-\infty}^{\infty} \frac{1}{2\pi} \underbrace{\left\{\int_{-\infty}^{\infty} f(\xi) \exp(-i \omega \xi) \; d \xi \right\}}_{\hat{f}(\omega)} \exp(i \omega t) \; d \omega\\
+		f(t) & = \frac{1}{2 \pi} \int_{-\infty}^{\infty} \hat{f}(\omega) \exp(i \omega t) \; d\omega
+	\end{split}
 \end{equation}
+Вывод: получаются формулы для прямого и обратного преобразования Фурье.
+\begin{equation}
+	\begin{split}
+		\hat{f}(\omega) & = \mathcal{F}(f(t)) = \int_{-\infty}^{\infty} f(t) \exp(-i \omega t) \; dt\\
+		f(t) & = \mathcal{F}^{-1}(\hat{f}(\omega)) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} \hat{f}(\omega) \exp(i \omega t) \; d\omega
+	\end{split}
+\end{equation}
+Таким образом, получаем возможность анализа функции в частотном пространстве. Однако стоит упомянуть, что преобразование Фурье имеет смысл применять только в случае стационарного спектра сигнала. То есть, как говорится в (\myref{def::signal_stationarity}), набор частот не должен меняться во времени. 
+
+\begin{theorem}[теорема Персеваля \cite{brunton2022data}] \label{thm::parceval}
+	<<Энергия>> исходного сигнала $f(t)$ (если он не является периодическим) или его <<сила>> (в случае периодичности) в пространстве времени $(t)$ равна данной величине, но в пространстве частот~$(\omega)$. 
+\end{theorem}
+Иными словами, данная теорема утверждает: если есть коэффициенты Фурье, которые достаточно малы (то есть по модулю близки к $0$), то <<удалив>> их (приравняв к $0$) получаем сигнал близкий к исходному $f(t)$.
