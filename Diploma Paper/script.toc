@@ -20,16 +20,16 @@
 \contentsline {paragraph}{\numberline {2.2.6.2}Пример: Multistage SSA}{51}{paragraph.2.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.2.7}Частотно-временной анализ}{52}{subsubsection.2.2.7}%
 \contentsline {paragraph}{\numberline {2.2.7.1}Анализ Фурье}{53}{paragraph.2.2.7.1}%
-\contentsline {paragraph}{\numberline {2.2.7.2}Быстрое преобразование Фурье}{54}{paragraph.2.2.7.2}%
-\contentsline {paragraph}{\numberline {2.2.7.3}Анализ wavelet}{54}{paragraph.2.2.7.3}%
-\contentsline {subsubsection}{\numberline {2.2.8}Neural Networks}{54}{subsubsection.2.2.8}%
-\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{54}{paragraph.2.2.8.1}%
-\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{55}{paragraph.2.2.8.2}%
-\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{55}{paragraph.2.2.8.3}%
-\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions}{55}{paragraph.2.2.8.4}%
-\contentsline {section}{\numberline {3}Описание данных и эксперимент}{55}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{55}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{55}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Обсуждение выводов}{55}{section.4}%
-\contentsline {section}{\numberline {5}Заключение}{55}{section.5}%
-\contentsline {section}{Список литературы}{60}{section*.2}%
+\contentsline {paragraph}{\numberline {2.2.7.2}Быстрое преобразование Фурье}{56}{paragraph.2.2.7.2}%
+\contentsline {paragraph}{\numberline {2.2.7.3}Анализ wavelet}{56}{paragraph.2.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.2.8}Neural Networks}{56}{subsubsection.2.2.8}%
+\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{56}{paragraph.2.2.8.1}%
+\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{56}{paragraph.2.2.8.2}%
+\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{56}{paragraph.2.2.8.3}%
+\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions}{56}{paragraph.2.2.8.4}%
+\contentsline {section}{\numberline {3}Описание данных и эксперимент}{57}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{57}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{57}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Обсуждение выводов}{57}{section.4}%
+\contentsline {section}{\numberline {5}Заключение}{57}{section.5}%
+\contentsline {section}{Список литературы}{63}{section*.2}%

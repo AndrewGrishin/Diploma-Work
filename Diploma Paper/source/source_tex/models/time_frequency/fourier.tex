@@ -16,7 +16,7 @@
 \begin{enumerate}
 	\item $\sin(k\omega t), \sin(l \omega t): k, l \in \N, \omega \in \R^+$.
 	\begin{equation}
-		p = \int_{0}^T \sin(k\omega t)\sin(l \omega t) \; \text{d}t =
+		p = \int_{0}^T \sin(k\omega t)\sin(l \omega t) \; dt =
 		\left\{
 		\begin{array}{rl}
 			0 & \text{, } k \ne l\\
@@ -27,7 +27,7 @@
 	
 	\item $\cos(k\omega t), \cos(l \omega t): k, l \in \N, \omega \in \R^+$.
 	\begin{equation}
-		p = \int_{0}^T \cos(k\omega t)\cos(l \omega t) \; \text{d}t =
+		p = \int_{0}^T \cos(k\omega t)\cos(l \omega t) \; dt =
 		\left\{
 		\begin{array}{rl}
 			0 & \text{, } k \ne l\\
@@ -38,7 +38,64 @@
 	
 	\item $\cos(k\omega t), \sin(l \omega t): k, l \in \N, \omega \in \R^+$.
 	\begin{equation}
-		p = \int_{0}^T \cos(k\omega t)\sin(l \omega t) \; \text{d}t = 0
+		p = \int_{0}^T \cos(k\omega t)\sin(l \omega t) \; dt = 0
 	\end{equation}
 \end{enumerate}
-Тогда, опираясь на  выражение (\ref{equation::fourier_approximation}), получаем формулы для коэффициентов:
+Тогда, опираясь на  выражение (\ref{equation::fourier_approximation}) и умножение его обеих частей на $\sin(k\omega t)$ и $\cos(l \omega t)$, получаем формулы для коэффициентов. Рассматриваем только для $\sin(\cdot)$, так как аналогичным образом получается для $\cos(\cdot)$.
+\begin{equation}
+	\int_{0}^T f(t) \sin(p \omega t) dt = \int_0^T \sin(p \omega t) \left(\sum_{k = 1}^{\infty} a_k\cos(k \omega t) + b_k\sin(k \omega t) \right) dt
+\end{equation}
+Однако изменять порядок интегрирования и суммирования, при условии бесконечной суммы, можно только в случае равномерной сходимости ряда. Для настоящего ряда проблем в сходимости не наблюдается \cite{teljacovski2001convergence}, \cite{mipt2004fourier}. Преобразуем выражение, приняв во внимание факт ортогональности функций, описанный выше:
+\begin{equation}
+	\begin{split}
+		\int_{0}^T f(t) \sin(p \omega t) \; dt & = \sum_{k = 1}^{\infty} b_k \int_0^T \sin(k \omega t)\sin(p \omega t) \; dt = T / 2  \cdot b_p \\
+		b_k & = \frac{2}{T}  \int_{0}^T f(t) \sin(k \omega t) \; dt 
+	\end{split}
+\end{equation}
+Аналогичным образом получаем выражение для коэффициентов $a_k$:
+\begin{equation}
+	a_k = \frac{2}{T}  \int_{0}^T f(t) \cos(k \omega t) \; dt 
+\end{equation}
+В более удобной форме вся задача приближения выглядит:
+\begin{equation} \label{eq::fourier_task}
+	\begin{split}
+		f(t) & = \frac{a_0}{2} + \sum_{k = 1}^{\infty} a_k\cos(k \omega t) + b_k\sin(k \omega t)\\
+		& = \frac{a_0}{2} + \sum_{k = 1}^{\infty} A_k \cos(k \omega t - \phi_k)\\
+		A_k & = \sqrt{a_k^2 + b_k^2}\\
+		\phi_k & = \arctan(b_k / a_k)\\
+	\end{split}
+\end{equation}
+Где $A_k$ - амплитуда сигнала, а набор амплитуд $\left\{A_k\right\}_{k = 1}^\infty$ - спектр сигнала, $\phi_k$ - фаза сигнала. Переход к подобной записи как после 2-ого знака равенства сделан для того, чтобы было интуитивно удобнее характеризовать величину посредством не синуса и косинуса, а амплитуды и фазы в конкретный момент времени. Однако (\ref{eq::fourier_task}) можно еще больше упростить, перейдя в комплексную плоскость и воспользовавшись тождеством Эйлера:
+\begin{equation}
+	\exp(i k \omega t) = \cos(k \omega t) + i \sin(k \omega t)
+\end{equation}
+Отсюда получаем выражения для $\cos(k \omega t)$ и $\sin(k \omega t)$, после чего переписываем не все приближение, а только конкретный коэффициент $k$ (это сделано для удобства восприятия):
+\begin{equation}
+	\begin{split}
+		a_k \cdot \frac{\exp(i k \omega t) + \exp(-i k \omega t)}{2} & + b_k \cdot \frac{\exp(i k \omega t) - \exp(-i k \omega t)}{2i}\\
+		\underbrace{\left( \frac{a_k}{2} - \frac{b_k}{2} i \right) \exp(i k \omega t)}_{\text{<<Положительная>> часть}} & + \underbrace{\left( \frac{a_k}{2} + \frac{b_k}{2} i \right) \exp(-i k \omega t)}_{\text{<<Отрицательная>> часть}}
+	\end{split}
+\end{equation}
+Отсюда получаем:
+\begin{equation}
+	c_k = \left\{
+	\begin{array}{rl}
+		a_k / 2 - i \cdot b_k/ 2  & \text{ ; } k \ge 0\\ 
+		a_k / 2 + i \cdot b_k/ 2  & \text{ ; } k < 0\\ 
+	\end{array}
+	\right.
+\end{equation}
+В конечно виде (\ref{eq::fourier_task}) записывается уже как:
+\begin{equation}
+	f(t) = \sum_{k = -\infty}^{\infty} c_k \exp(i k \omega t)
+\end{equation}
+Однако тут интерес представляют сами коэффициенты $c_k$, так как именно они и являются коэффициентами Фурье при проецировании на базисные функции. Вспоминаем, что ранее делалась предпосылка, что сигнал $f(t)$ является периодическим. \textbf{Q}: Как быть в противном случае? \textbf{A}: Необходимо сам период устремить к $\infty$. Но прежде подставляем вместо некоторой частоты $\omega$ конкретное значение: $\omega = k \Delta \omega$, где $\Delta \omega = \pi / T$. Следовательно, $c_k = \langle f, \psi_k\rangle / (2 \pi)$, где $\psi_k \equiv \exp(i k t)$. Значит:
+\begin{equation}
+	\begin{split}
+		f(t) & = \lim_{\Delta \omega \to 0} \sum_{k = -\infty}^{\infty} \frac{\Delta \omega}{2 \pi} \left[\int_{-\pi / \Delta \omega}^{\pi / \Delta \omega} f(\xi) \exp(-i k \Delta \omega \xi) \; d \xi\right] \exp(i k \Delta \omega)\\
+	\end{split}	
+\end{equation}
+Но подобное выражение, путем вычисления предела, превращается в:
+\begin{equation}
+	f(t) = \int_{-\infty}^{\infty} \frac{1}{2\pi} \underbrace{\left\{\int_{-\infty}^{\infty} f(\xi) \exp(-i \omega \xi) \; d \xi \right\}}_{\hat{f}(\omega)} \exp(i \omega t) \; d \omega
+\end{equation}

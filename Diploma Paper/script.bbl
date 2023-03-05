@@ -291,6 +291,13 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
   2023.
 \newblock \url{https://github.com/cure-lab/LTSF-Linear}.
 
+\bibitem{mipt2004fourier}
+О.В. Бесов.
+\newblock Тригонометрические ряда Фурье:
+  учебно-методическое пособие.
+\newblock {\em Московский физико-технический
+  институт}, 2004.
+
 \bibitem{garafutdinov2021research}
 РВ Гарафутдинов.
 \newblock Исследование влияния некоторых
@@ -336,6 +343,13 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
   МГУ}, 2021.
 \newblock
   \url{http://higeom.math.msu.su/people/taras/teaching/slides-linalg/panov-linalg-lec10.pdf}.
+
+\bibitem{teljacovski2001convergence}
+Сергей~Александрович Теляковский.
+\newblock О равномерной сходимости рядов Фурье
+  функций ограниченной вариации.
+\newblock {\em Труды Математического института
+  имени ВА Стеклова}, 232(0):318--326, 2001.
 
 \bibitem{stationarity_of_time_series_econometrics}
 Н. В. Артамонов; Е. А. Ивин; А. Н. Курбацкий;~Д.
