@@ -1,4 +1,4 @@
-\babel@toc {russian}{}\relax 
+\babel@toc {russian}{}
 \contentsline {section}{\relax \fontsize {24.88}{30}\selectfont Оглавление}{2}{section*.1}%
 \contentsline {section}{\numberline {1}Введение}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Актуальность}{4}{subsection.1.1}%
@@ -23,14 +23,14 @@
 \contentsline {paragraph}{\numberline {2.2.7.2}Быстрое преобразование Фурье (FFT)}{57}{paragraph.2.2.7.2}%
 \contentsline {paragraph}{\numberline {2.2.7.3}Анализ wavelet}{57}{paragraph.2.2.7.3}%
 \contentsline {paragraph}{\numberline {2.2.7.4}Пример: FFT удаление шума}{57}{paragraph.2.2.7.4}%
-\contentsline {subsubsection}{\numberline {2.2.8}Neural Networks}{57}{subsubsection.2.2.8}%
-\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{57}{paragraph.2.2.8.1}%
-\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{57}{paragraph.2.2.8.2}%
-\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{57}{paragraph.2.2.8.3}%
-\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions}{57}{paragraph.2.2.8.4}%
-\contentsline {section}{\numberline {3}Описание данных и эксперимент}{58}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{58}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{58}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Обсуждение выводов}{58}{section.4}%
-\contentsline {section}{\numberline {5}Заключение}{58}{section.5}%
-\contentsline {section}{Список литературы}{64}{section*.2}%
+\contentsline {subsubsection}{\numberline {2.2.8}Neural Networks}{60}{subsubsection.2.2.8}%
+\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{60}{paragraph.2.2.8.1}%
+\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{60}{paragraph.2.2.8.2}%
+\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{60}{paragraph.2.2.8.3}%
+\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions}{60}{paragraph.2.2.8.4}%
+\contentsline {section}{\numberline {3}Описание данных и эксперимент}{60}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{60}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{60}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Обсуждение выводов}{60}{section.4}%
+\contentsline {section}{\numberline {5}Заключение}{60}{section.5}%
+\contentsline {section}{Список литературы}{66}{section*.2}%
