@@ -120,5 +120,13 @@
 
 \begin{theorem}[теорема Персеваля \cite{brunton2022data}] \label{thm::parceval}
 	<<Энергия>> исходного сигнала $f(t)$ (если он не является периодическим) или его <<сила>> (в случае периодичности) в пространстве времени $(t)$ равна данной величине, но в пространстве частот~$(\omega)$. 
+	\begin{equation}
+		\int_{\R} \lvert f(t) \rvert ^2 \; dt = \int_{\R} \lvert \hat{f}(\omega) \rvert ^2 \; d \omega
+	\end{equation}
+	В случае ненормированности базисной функции:
+	\begin{equation}
+		\lVert \hat{f} \rVert^2 = 2 \pi \lVert f \rVert^2 \Rightarrow \lVert \hat{f} \rVert^2 \propto \lVert f \rVert^2
+	\end{equation}
+	Где $\lVert f \rVert^2 = \int_{-\infty}^{\infty} \lvert f(t) \rvert^2 \; dt$.
 \end{theorem}
 Иными словами, данная теорема утверждает: если есть коэффициенты Фурье, которые достаточно малы (то есть по модулю близки к $0$), то <<удалив>> их (приравняв к $0$) получаем сигнал близкий к исходному $f(t)$.

@@ -38,6 +38,11 @@ Steven~L Brunton and J~Nathan Kutz.
   systems, and control}.
 \newblock Cambridge University Press, 2022.
 
+\bibitem{busch2007heisenberg}
+Paul Busch, Teiko Heinonen, and Pekka Lahti.
+\newblock Heisenberg's uncertainty principle.
+\newblock {\em Physics Reports}, 452(6):155--176, 2007.
+
 \bibitem{wold_decomposition}
 Christiano.
 \newblock Wold representation theorem.
@@ -201,6 +206,11 @@ Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock Efficient estimation of word representations in vector space.
 \newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
 \newblock \url{https://arxiv.org/abs/1301.3781}.
+
+\bibitem{schluter2010using}
+Stephan Schl{\"u}ter and Carola Deuschle.
+\newblock Using wavelets for time series forecasting: Does it pay off?
+\newblock Technical report, IWQW Discussion Papers, 2010.
 
 \bibitem{seasonality_in_financial_TS_is_real}
 Mostafa Seif, Paul Docherty, and Abul Shamsuddin.
