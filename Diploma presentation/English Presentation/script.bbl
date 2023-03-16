@@ -16,10 +16,9 @@ Sewell, M. (2011).
 \newblock History of the efficient market hypothesis.
 \newblock {\em Rn}, 11(04):04.
 
-\bibitem[Tofallis, 2015]{tofallis2015better}
-Tofallis, C. (2015).
-\newblock A better measure of relative prediction accuracy for model selection
-  and model estimation.
-\newblock {\em Journal of the Operational Research Society}, 66:1352--1362.
+\bibitem[Zeng et~al., 2022]{zeng2022transformers}
+Zeng, A., Chen, M., Zhang, L., and Xu, Q. (2022).
+\newblock Are transformers effective for time series forecasting?
+\newblock {\em arXiv preprint arXiv:2205.13504}.
 
 \end{thebibliography}

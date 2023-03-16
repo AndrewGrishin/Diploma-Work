@@ -8,7 +8,7 @@
 \usepackage{booktabs, float}
 \usepackage{tikz}
 \usepackage{graphics}
-\graphicspath{{./Cells}}
+\graphicspath{{./source/photos}}
 
 \title[Stock returns forecasting]{Neural networks and econometric models in forecasting stock returns}
 \author{Andrew~Grishin}
@@ -129,9 +129,24 @@
 		\end{itemize}
 	\end{frame}
 
-	\begin{frame}{Data analysis (insights)}
-		content...
+	\begin{frame}{Data analysis (visual insights) --- Open prices and returns: US \& China}
+		\begin{figure}[H]
+			\includegraphics[width= 14cm]{visual_insight.png}
+		\end{figure}
 	\end{frame}
+
+	\begin{frame}{Data analysis (scalogram insights) --- Coca Cola}
+		\begin{figure}[H]
+			\includegraphics[width= 14cm]{scalogram_insights_us.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Data analysis (scalogram insights): Kweichow Moutai}
+		\begin{figure}[H]
+			\includegraphics[width= 14cm]{scalogram_insights_china.png}
+		\end{figure}
+	\end{frame}
+
 	
 	\subsection{Method}
 	\begin{frame}{Method}
@@ -156,10 +171,10 @@
 					\begin{enumerate}
 						\item MLP/RNN/WN
 						\item MSSA/EWMA + MLP/RNN/WN
-						\item MLP/RNN/WN + (FI)GARCH
+						\item No "transformers" $\Leftarrow$ \cite{zeng2022transformers}
 					\end{enumerate}
 				\end{center}
-				\textbf{Metrics Function} \cite{tofallis2015better}:
+				\textbf{Metrics Function}:
 				\begin{equation}
 					\text{WAPE}(\hat{y}, y) = \frac{\sum_{t= 1}^n |y_t - \hat{y}_t|}{\sum_{t= 1}^n |y_t|}
 				\end{equation}
@@ -180,7 +195,6 @@
 	
 	\section{References}
 	\begin{frame}{References}
-		%\bibliographystyle{plain}
 		\bibliographystyle{apalike}
 		\bibliography{./source/bibliography/bibliography}
 	\end{frame}
