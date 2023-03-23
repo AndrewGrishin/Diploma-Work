@@ -5,6 +5,12 @@ Fama, E. (1970).
 \newblock Efficient capital markets, a review of theory and empirical work.
 \newblock {\em The journal of Finance}, 25(2):383--417.
 
+\bibitem[Kuang et~al., 2020]{kuang2020efficient}
+Kuang, W., Wang, S., Lai, Y., and Ling, W.-K. (2020).
+\newblock Efficient and adaptive signal denoising based on multistage singular
+  spectrum analysis.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 70:1--20.
+
 \bibitem[Mandelbrot, 2006]{mandelbrot2006misbehavior}
 Mandelbrot, B. (2006).
 \newblock The (mis)behavior of markets, a fractal view of risk, ruin and

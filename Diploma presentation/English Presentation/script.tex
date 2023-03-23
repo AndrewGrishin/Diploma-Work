@@ -65,7 +65,7 @@
 		\end{columns}
 	\end{frame}
 	
-	\subsection{Motivation}
+	\subsection{Motivation (what for?)}
 	\begin{frame}{Motivation}
 		\Large
 		\begin{itemize}
@@ -75,7 +75,7 @@
 		\end{itemize}
 	\end{frame}
 	
-	\subsection{Targets}
+	\subsection{Targets (what do we want?)}
 	\begin{frame}{Targets}
 		\Large
 		\begin{itemize}
@@ -85,7 +85,7 @@
 		\end{itemize}
 	\end{frame}
 	
-	\subsection{Tasks}
+	\subsection{Tasks (how to achieve it?)}
 	\begin{frame}{Tasks}
 		\Large
 		\begin{itemize}
@@ -98,7 +98,7 @@
 	\end{frame}
 	
 	\section{Pre-experiment}
-	\subsection{Hypothesis}
+	\subsection{Hypothesis (what is assumed?)}
 	\begin{frame}{Hypothesis}
 		\Large
 		\textbf{Essential}:
@@ -118,7 +118,7 @@
 		\end{itemize}
 	\end{frame}
 	
-	\subsection{Data analysis}
+	\subsection{Data analysis (what/where/insights)}
 	\begin{frame}{Data analysis}
 		\Large
 		\begin{itemize}
@@ -141,14 +141,14 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{Data analysis (scalogram insights): Kweichow Moutai}
+	\begin{frame}{Data analysis (scalogram insights) --- Kweichow Moutai}
 		\begin{figure}[H]
 			\includegraphics[width= 14cm]{scalogram_insights_china.png}
 		\end{figure}
 	\end{frame}
 
 	
-	\subsection{Method}
+	\subsection{Method (how it was proved?)}
 	\begin{frame}{Method}
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
@@ -180,17 +180,38 @@
 				\end{equation}
 			\end{column}
 		\end{columns}
+		\vspace{1cm}
+		\textbf{\textit{NB!}} MSSA --- Multistage Singular Spectrum Analysis \cite{kuang2020efficient}.
 	\end{frame}
 	
 	\section{Post-experiment}
-	\subsection{Tables of comparison}
-	\begin{frame}{Tables of comparison}
-		content...
+	\subsection{Tables of comparison (experiment results)}
+	\begin{frame}{Diagram of Price Errors Comparison (\%)}
+		\begin{figure}[H]
+			\includegraphics[width= 14cm]{table_prices.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Diagram of Returns Errors Comparison (\%)}
+		\begin{figure}[H]
+			\includegraphics[width= 14cm]{table_returns.png}
+		\end{figure}
 	\end{frame}
 	
-	\subsection{Discussion}
-	\begin{frame}{Discussion}
-		content...
+	\subsection{Discussion (new insights)}
+	\begin{frame}{Discussion (new insights)}
+		\begin{enumerate}
+			\item (Accuracy) Prices forecast $\gg$ Returns forecast
+			\item MSSA + MLP $\Rightarrow$ Best for prices
+			\item MSSA + RNN $\Rightarrow$ Best for returns
+			\item Econometric models $\Rightarrow$ bad for returns forecasting
+			\item Econometric models $\Rightarrow$ less accurate for developing market (prices)
+			\item No noise $\Rightarrow$ more accurate forecast: \textbf{exception} Wavelet Networks
+			\item WN \& MSSA + WN $\equiv$ 7 days of Network training
+			\item EWMA $\equiv$ the fastest and is "simple" RNN
+			\item Boosting $\equiv$ bad attempt (ARIMA + GARCH, ARFIMA + GARCH)
+			\item ARFIMA is better than ARIMA $\Rightarrow$ Market fractallity exists \cite{mandelbrot2006misbehavior}
+		\end{enumerate}
 	\end{frame}
 	
 	\section{References}
