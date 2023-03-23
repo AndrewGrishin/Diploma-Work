@@ -1,4 +1,4 @@
-\babel@toc {russian}{}
+\babel@toc {russian}{}\relax 
 \contentsline {section}{\relax \fontsize {24.88}{30}\selectfont Оглавление}{2}{section*.1}%
 \contentsline {section}{\numberline {1}Введение}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Актуальность}{4}{subsection.1.1}%
@@ -24,13 +24,13 @@
 \contentsline {paragraph}{\numberline {2.2.7.3}Пример: FFT удаление шума}{57}{paragraph.2.2.7.3}%
 \contentsline {paragraph}{\numberline {2.2.7.4}Анализ wavelet}{61}{paragraph.2.2.7.4}%
 \contentsline {subsubsection}{\numberline {2.2.8}Neural Networks}{64}{subsubsection.2.2.8}%
-\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{64}{paragraph.2.2.8.1}%
-\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{64}{paragraph.2.2.8.2}%
-\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{64}{paragraph.2.2.8.3}%
-\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions}{64}{paragraph.2.2.8.4}%
+\contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{65}{paragraph.2.2.8.1}%
+\contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{65}{paragraph.2.2.8.2}%
+\contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{65}{paragraph.2.2.8.3}%
+\contentsline {paragraph}{\numberline {2.2.8.4}Алгоритмы обучения: AdamW vs Lions vs L-BFGS}{65}{paragraph.2.2.8.4}%
 \contentsline {section}{\numberline {3}Описание данных и эксперимент}{65}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{65}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{65}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Обсуждение выводов}{65}{section.4}%
 \contentsline {section}{\numberline {5}Заключение}{65}{section.5}%
-\contentsline {section}{Список литературы}{71}{section*.2}%
+\contentsline {section}{Список литературы}{72}{section*.2}%
