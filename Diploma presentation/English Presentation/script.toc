@@ -10,4 +10,4 @@
 \beamer@subsectionintoc {3}{1}{Tables of comparison (experiment results)}{13}{0}{3}
 \beamer@subsectionintoc {3}{2}{Discussion (new insights)}{15}{0}{3}
 \beamer@sectionintoc {4}{References}{16}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{17}{0}{5}
+\beamer@sectionintoc {5}{Conclusion}{18}{0}{5}
