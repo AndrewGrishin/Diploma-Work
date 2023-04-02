@@ -22,6 +22,12 @@ Nathan Benaich and Ian Hogarth.
 \newblock Air Street Capital, Plural, 2022.
 \newblock \url{https://www.stateof.ai/}.
 
+\bibitem{bock2018improvement}
+Sebastian Bock, Josef Goppold, and Martin Wei{\ss}.
+\newblock An improvement of the convergence proof of the adam-optimizer.
+\newblock {\em arXiv preprint arXiv:1804.10587}, 2018.
+\newblock \url{https://arxiv.org/abs/1804.10587}.
+
 \bibitem{bollerslev1986garch}
 Tim Bollerslev.
 \newblock Generalized autoregressive conditional heteroskedasticity.
@@ -42,6 +48,21 @@ Steven~L Brunton and J~Nathan Kutz.
 Paul Busch, Teiko Heinonen, and Pekka Lahti.
 \newblock Heisenberg's uncertainty principle.
 \newblock {\em Physics Reports}, 452(6):155--176, 2007.
+
+\bibitem{challu2022n}
+Cristian Challu, Kin~G Olivares, Boris~N Oreshkin, Federico Garza, Max
+  Mergenthaler, and Artur Dubrawski.
+\newblock N-hits: Neural hierarchical interpolation for time series
+  forecasting.
+\newblock {\em arXiv preprint arXiv:2201.12886}, 2022.
+\newblock \url{https://arxiv.org/abs/2201.12886}.
+
+\bibitem{chen2023symbolic}
+Xiangning Chen, Chen Liang, Da~Huang, Esteban Real, Kaiyuan Wang, Yao Liu, Hieu
+  Pham, Xuanyi Dong, Thang Luong, Cho-Jui Hsieh, et~al.
+\newblock Symbolic discovery of optimization algorithms.
+\newblock {\em arXiv preprint arXiv:2302.06675}, 2023.
+\newblock \url{https://arxiv.org/abs/2302.06675}.
 
 \bibitem{wold_decomposition}
 Christiano.
@@ -139,6 +160,12 @@ Harold~Edwin Hurst.
 \newblock {\em Transactions of the American society of civil engineers},
   116(1):770--799, 1951.
 
+\bibitem{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
+\newblock \url{https://arxiv.org/abs/1412.6980}.
+
 \bibitem{kuang2020efficient}
 Weichao Kuang, Shanjin Wang, Yingxin Lai, and Wing-Kuen Ling.
 \newblock Efficient and adaptive signal denoising based on multistage singular
@@ -198,6 +225,19 @@ Peiru Lin, Weichao Kuang, Chuqi Yang, and Wing-Kuen Ling.
   (ICCE-China)}, pages 1--3, 2016.
 \newblock \url{https://ieeexplore.ieee.org/abstract/document/7849753}.
 
+\bibitem{linnainmaa1970representation}
+Seppo Linnainmaa.
+\newblock {\em The representation of the cumulative rounding error of an
+  algorithm as a Taylor expansion of the local rounding errors}.
+\newblock PhD thesis, Master’s Thesis (in Finnish), Univ. Helsinki, 1970.
+
+\bibitem{liu1989limited}
+Dong~C Liu and Jorge Nocedal.
+\newblock On the limited memory bfgs method for large scale optimization.
+\newblock {\em Mathematical programming}, 45(1-3):503--528, 1989.
+\newblock
+  \url{https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/BF01589116&casa_token=auoklDmJRrEAAAAA:5JJ0MgUQhxCp1_cjfx63Sohc0JOevRvnV1XafZ8_nlLfqdGiIXsgSx_HAk7fz7ug9R3r6ALLOOaDpwA}.
+
 \bibitem{andrew1991longterm}
 Andrew~W. Lo.
 \newblock Long-term memory in stock market prices.
@@ -236,6 +276,13 @@ Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
 \newblock \url{https://arxiv.org/abs/1301.3781}.
 
+\bibitem{oreshkin2019n}
+Boris~N Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
+\newblock N-beats: Neural basis expansion analysis for interpretable time
+  series forecasting.
+\newblock {\em arXiv preprint arXiv:1905.10437}, 2019.
+\newblock \url{https://arxiv.org/abs/1905.10437}.
+
 \bibitem{rosenblatt1961principles}
 Frank Rosenblatt.
 \newblock Principles of neurodynamics. perceptrons and the theory of brain
@@ -248,6 +295,12 @@ Frank Rosenblatt.
 David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
 \newblock Learning representations by back-propagating errors.
 \newblock {\em nature}, 323(6088):533--536, 1986.
+
+\bibitem{schapire2003boosting}
+Robert~E Schapire.
+\newblock The boosting approach to machine learning: An overview.
+\newblock {\em Nonlinear estimation and classification}, pages 149--171, 2003.
+\newblock \url{https://link.springer.com/chapter/10.1007/978-0-387-21579-2_9}.
 
 \bibitem{schluter2010using}
 Stephan Schl{\"u}ter and Carola Deuschle.
