@@ -28,9 +28,9 @@
 \contentsline {paragraph}{\numberline {2.2.8.1}Multilayer Perceptron}{65}{paragraph.2.2.8.1}%
 \contentsline {paragraph}{\numberline {2.2.8.2}Recurrent Neural Network}{70}{paragraph.2.2.8.2}%
 \contentsline {paragraph}{\numberline {2.2.8.3}Wavelet Network}{70}{paragraph.2.2.8.3}%
-\contentsline {section}{\numberline {3}Описание данных и эксперимент}{70}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{70}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{70}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Обсуждение выводов}{70}{section.4}%
-\contentsline {section}{\numberline {5}Заключение}{70}{section.5}%
-\contentsline {section}{Список литературы}{77}{section*.2}%
+\contentsline {section}{\numberline {3}Описание данных и эксперимент}{71}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Развивающийся рынок (Китай)}{71}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Развитый рынок (США)}{71}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Обсуждение выводов}{71}{section.4}%
+\contentsline {section}{\numberline {5}Заключение}{71}{section.5}%
+\contentsline {section}{Список литературы}{78}{section*.2}%
