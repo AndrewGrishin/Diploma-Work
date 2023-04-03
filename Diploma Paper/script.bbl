@@ -64,6 +64,14 @@ Xiangning Chen, Chen Liang, Da~Huang, Esteban Real, Kaiyuan Wang, Yao Liu, Hieu
 \newblock {\em arXiv preprint arXiv:2302.06675}, 2023.
 \newblock \url{https://arxiv.org/abs/2302.06675}.
 
+\bibitem{cho2014learning}
+Kyunghyun Cho, Bart Van~Merri{\"e}nboer, Caglar Gulcehre, Dzmitry Bahdanau,
+  Fethi Bougares, Holger Schwenk, and Yoshua Bengio.
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation.
+\newblock {\em arXiv preprint arXiv:1406.1078}, 2014.
+\newblock \url{https://arxiv.org/abs/1406.1078}.
+
 \bibitem{wold_decomposition}
 Christiano.
 \newblock Wold representation theorem.
@@ -152,6 +160,11 @@ Hossein Hassani and Mohammad~Reza Yeganegi.
 \newblock
   \url{https://www.sciencedirect.com/science/article/pii/S0378437119320618}.
 
+\bibitem{hochreiter1991untersuchungen}
+Sepp Hochreiter.
+\newblock Untersuchungen zu dynamischen neuronalen netzen.
+\newblock {\em Diploma, Technische Universit{\"a}t M{\"u}nchen}, 91(1), 1991.
+
 \bibitem{hochreiter1997long}
 Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
@@ -237,7 +250,8 @@ Peiru Lin, Weichao Kuang, Chuqi Yang, and Wing-Kuen Ling.
 Seppo Linnainmaa.
 \newblock {\em The representation of the cumulative rounding error of an
   algorithm as a Taylor expansion of the local rounding errors}.
-\newblock PhD thesis, Master’s Thesis (in Finnish), Univ. Helsinki, 1970.
+\newblock PhD thesis, Department of Computer Science, University of Helsinki,
+  1970.
 
 \bibitem{liu1989limited}
 Dong~C Liu and Jorge Nocedal.
@@ -283,6 +297,12 @@ Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock Efficient estimation of word representations in vector space.
 \newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
 \newblock \url{https://arxiv.org/abs/1301.3781}.
+
+\bibitem{mikolov2012statistical}
+Tom{\'a}{\v{s}} Mikolov et~al.
+\newblock Statistical language models based on neural networks.
+\newblock {\em Presentation at Google, Mountain View, 2nd April}, 80(26), 2012.
+\newblock \url{https://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf}.
 
 \bibitem{oreshkin2019n}
 Boris~N Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
