@@ -75,7 +75,7 @@ Kyunghyun Cho, Bart Van~Merri{\"e}nboer, Caglar Gulcehre, Dzmitry Bahdanau,
 \bibitem{wold_decomposition}
 Christiano.
 \newblock Wold representation theorem.
-\newblock {\em Northwestern University: FINC-520}, " ".
+\newblock {\em Northwestern University: FINC-520}, 1954.
 \newblock \url{https://faculty.wcas.northwestern.edu/lchrist/finc520/wold.pdf}.
 
 \bibitem{cooley1965algorithm}
@@ -435,6 +435,12 @@ Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
 \newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
   2023.
 \newblock \url{https://github.com/cure-lab/LTSF-Linear}.
+
+\bibitem{zhang1992wavelet}
+Qinghua Zhang and Albert Benveniste.
+\newblock Wavelet networks.
+\newblock {\em IEEE transactions on Neural Networks}, 3(6):889--898, 1992.
+\newblock \url{https://ieeexplore.ieee.org/abstract/document/165591}.
 
 \bibitem{mipt2004fourier}
 О.В. Бесов.
