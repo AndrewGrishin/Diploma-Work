@@ -1,0 +1,47 @@
+\begin{thebibliography}{}
+
+\bibitem[Alexandridis and Zapranis, 2014]{alexandridis2014wavelet}
+Alexandridis, A.~K. and Zapranis, A.~D. (2014).
+\newblock {\em Wavelet neural networks: with applications in financial
+  engineering, chaos, and etc.}
+\newblock John Wiley \& Sons.
+
+\bibitem[Fama, 1970]{fama1970efficient}
+Fama, E. (1970).
+\newblock Efficient capital markets, a review of theory and empirical work.
+\newblock {\em The journal of Finance}, 25(2):383--417.
+
+\bibitem[Hochreiter and Schmidhuber, 1997]{hochreiter1997long}
+Hochreiter, S. and Schmidhuber, J. (1997).
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9(8):1735--1780.
+
+\bibitem[Kuang et~al., 2020]{kuang2020efficient}
+Kuang, W., Wang, S., Lai, Y., and Ling, W.-K. (2020).
+\newblock Efficient and adaptive signal denoising based on multistage singular
+  spectrum analysis.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 70:1--20.
+
+\bibitem[Mandelbrot, 2006]{mandelbrot2006misbehavior}
+Mandelbrot, B. (2006).
+\newblock The (mis)behavior of markets, a fractal view of risk, ruin and
+  reward.
+\newblock {\em Journal of Economic Behavior and Organization}, 61(3):513--515.
+
+\bibitem[Rosenblatt, 1961]{rosenblatt1961principles}
+Rosenblatt, F. (1961).
+\newblock Principles of neurodynamics. perceptrons and the theory of brain
+  mechanisms.
+\newblock Technical report, Cornell Aeronautical Lab Inc Buffalo NY.
+
+\bibitem[Sewell, 2011]{matrin2011history}
+Sewell, M. (2011).
+\newblock History of the efficient market hypothesis.
+\newblock {\em Rn}, 11(04):04.
+
+\bibitem[Zeng et~al., 2022]{zeng2022transformers}
+Zeng, A., Chen, M., Zhang, L., and Xu, Q. (2022).
+\newblock Are transformers effective for time series forecasting?
+\newblock {\em arXiv preprint arXiv:2205.13504}.
+
+\end{thebibliography}
