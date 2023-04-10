@@ -142,6 +142,13 @@ GistaT Group.
   1996 -2020.
 \newblock \url{https://goo.su/fKrAyP}.
 
+\bibitem{statista2023distribution}
+Statista Group.
+\newblock Distribution of countries with largest stock markets worldwide as of
+  january 2023, by share of total world equity market value.
+\newblock \url{https://goo.su/F4KK7}.
+\newblock Accessed: 2023--04--06.
+
 \bibitem{hansen2005forecast}
 Peter~R Hansen and Asger Lunde.
 \newblock A forecast comparison of volatility models: does anything beat a
@@ -178,11 +185,29 @@ J.~R.~M. Hosking.
 \newblock {\em Biometrika}, 68(1):165--176, 1981.
 \newblock \url{https://goo.su/xz3BzI}.
 
+\bibitem{hu2018chinese}
+Grace~Xing Hu, Jun Pan, and Jiang Wang.
+\newblock Chinese capital market: An empirical overview.
+\newblock {\em National Bureau of Economic Research}, 2018.
+\newblock \url{https://goo.su/LtQrj}.
+
 \bibitem{hurst1951long}
 Harold~Edwin Hurst.
 \newblock Long-term storage capacity of reservoirs.
 \newblock {\em Transactions of the American society of civil engineers},
   116(1):770--799, 1951.
+
+\bibitem{investopedia2023emerging}
+Investopedia.
+\newblock Msci emerging markets index: Overview, how to invest --- 2022.
+\newblock \url{https://goo.su/Ufcj}.
+\newblock Accessed: 2023--04--06.
+
+\bibitem{investprovit2023developed}
+InvestProvit.
+\newblock Развитые рынки --- 2021.
+\newblock \url{https://goo.su/1nGDc}.
+\newblock Accessed: 2023--04--06.
 
 \bibitem{kingma2014adam}
 Diederik~P Kingma and Jimmy Ba.
@@ -301,6 +326,11 @@ Tom{\'a}{\v{s}} Mikolov et~al.
 \newblock Statistical language models based on neural networks.
 \newblock {\em Presentation at Google, Mountain View, 2nd April}, 80(26), 2012.
 \newblock \url{https://goo.su/S3huqAd}.
+
+\bibitem{msci2022msci}
+MSCI.
+\newblock Msci global market accessibility review.
+\newblock \url{https://goo.su/eaJx}, 2022.
 
 \bibitem{oreshkin2019n}
 Boris~N Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
@@ -436,6 +466,12 @@ Qinghua Zhang and Albert Benveniste.
 \newblock {\em IEEE transactions on Neural Networks}, 3(6):889--898, 1992.
 \newblock \url{https://goo.su/lA5qFS}.
 
+\bibitem{berger2008fund}
+Я~Бергер and В~Михеев.
+\newblock Фондовый рынок КНР.
+\newblock {\em Мировая экономика и международные
+  отношения}, 2008.
+
 \bibitem{mipt2004fourier}
 О.В. Бесов.
 \newblock Тригонометрические ряда Фурье:
@@ -450,11 +486,22 @@ Qinghua Zhang and Albert Benveniste.
   прогноза финансовых временных рядов.
 \newblock {\em Прикладная эконометрика}, 62:85, 2021.
 
+\bibitem{kulakov2016economic}
+МВ Кулаков and ЛП Чихун.
+\newblock Экономическое развитие. Теория и
+  практика.
+\newblock {\em М.: Экономика}, 2016.
+
 \bibitem{verbik_econometrics_garchs}
 Вербик~и Марно.
 \newblock Путеводитель по современной
   эконометрике.
 \newblock {\em Корреляция}, 2008.
+
+\bibitem{knight2003risk}
+Фрэнк~Хейнеман Найт.
+\newblock Риск, неопределенность и прибыль.
+\newblock {\em М.: дело}, 360:11, 2003.
 
 \bibitem{ropert_ouwen}
 Роберт Оуэн.
@@ -506,6 +553,12 @@ Qinghua Zhang and Albert Benveniste.
   экономики. – Вологда : ВолНЦ РАН, 2021. – 134
   с.: ил., табл.}, 2021.
 \newblock \url{https://clck.ru/344EdE}.
+
+\bibitem{open2023family}
+Открытный журнал.
+\newblock Семейство индексов msci --- 2018.
+\newblock \url{https://goo.su/sCQQ5Gf}.
+\newblock Accessed: 2023--04--06.
 
 \bibitem{quantil_2_2007}
 Международный эконометрический журнал на
