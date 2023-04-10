@@ -33,4 +33,4 @@
 \contentsline {subsection}{\numberline {3.2}Развивающийся рынок (Китай)}{88}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Обсуждение выводов}{93}{section.4}%
 \contentsline {section}{\numberline {5}Заключение}{97}{section.5}%
-\contentsline {section}{Список литературы}{104}{section*.2}%
+\contentsline {section}{Список литературы}{106}{section*.2}%
