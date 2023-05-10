@@ -6,9 +6,9 @@
 \beamer@sectionintoc {2}{Подготовка}{7}{0}{2}
 \beamer@subsectionintoc {2}{1}{Гипотезы (что предполагаем?)}{7}{0}{2}
 \beamer@subsectionintoc {2}{2}{Анализ данных (что/где/инсайд)}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{Метод (как доказываем?)}{12}{0}{2}
-\beamer@sectionintoc {3}{Пост эксперимент}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Сравнительная диаграмма (результат)}{13}{0}{3}
-\beamer@subsectionintoc {3}{2}{Обсуждение (новые инсайды)}{17}{0}{3}
-\beamer@sectionintoc {4}{Ссылки}{18}{0}{4}
-\beamer@sectionintoc {5}{Заключение}{20}{0}{5}
+\beamer@subsectionintoc {2}{3}{Метод (как доказываем?)}{13}{0}{2}
+\beamer@sectionintoc {3}{Пост эксперимент}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Сравнительная диаграмма (результат)}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Обсуждение (новые инсайды)}{18}{0}{3}
+\beamer@sectionintoc {4}{Ссылки}{19}{0}{4}
+\beamer@sectionintoc {5}{Заключение}{23}{0}{5}
