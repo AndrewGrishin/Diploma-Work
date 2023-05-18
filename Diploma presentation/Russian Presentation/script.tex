@@ -17,10 +17,10 @@
 \graphicspath{{./source/photos}}
 
 \title[Прогнозирование доходностей акций]{Применение нейронных сетей и эконометрических методов в прогнозировании доходностей акций}
-\author[Гришин А.Ю.]{Гришин~Андрей~Юрьевич ({\small группа: э408})}
+\author[Гришин А.Ю.]{Гришин~Андрей~Юрьевич ({\small группа: э408})\\\vspace{10pt}Научный руководитель: к.э.н., к.ф.-м.н., к.ю.н., доцент Сидоренко В.Н.\\\vspace{10pt}Кафедра Экономической Информатики}
 
 \institute[ЭФ МГУ]{Экономический Факультет Московского Государтвенного Университета}
-\date{18.05.2023}
+\date{18 мая 2023}
 
 \begin{document}
 	\begin{frame}
@@ -69,6 +69,14 @@
 				\end{itemize}
 			\end{column}
 		\end{columns}
+	\end{frame}
+
+	\begin{frame}{Предмет и объект исследования}
+		\Large
+		\begin{itemize}
+			\item \textbf{Предмет} --- способность математических моделей к прогнозированию исследуемых показателей.
+			\item \textbf{Объект} --- цены и доходности акций компаний развитых и развивающихся рынков.
+		\end{itemize}
 	\end{frame}
 	
 	\subsection{Актуальность (для чего?)}
@@ -130,24 +138,24 @@
 		\begin{itemize}
 			\item[] \textbf{Что}: Цены акций 15 компаний США и Китая.
 			\item[] \textbf{Откуда}: <<Yahoo! Finance>> Нью-Йоркская и Шанхайская\footnote{Не Гонконг, так как это развитый район Китая.} биржи.
-			\item[] \textbf{Период}: IPO (каждой компании) --- 13/12/2022\footnote{Далее акции ведут себя под воздействием политический решений.}.
+			\item[] \textbf{Период}: IPO (каждой компании) --- 13/12/2022\footnote{Далее акции ведут себя под воздействием политических решений.}.
 			\item[] \textbf{Индустрии}: IT (AMD), медиа (Netflix), продажи (Ebay), банки (Agricultural Bank of China), страхование (China Life Insurance Company Limited) и так далее.
 		\end{itemize}
 	\end{frame}
 
-	\begin{frame}{Анализ данных --- Цены открытия и доходности: США \& Китай}
-		\begin{figure}[H]
-			\includegraphics[width= 14cm]{visual_insight.png}
-		\end{figure}
-	\end{frame}
+	%\begin{frame}{Анализ данных --- Цены открытия и доходности: США и Китай}
+		%\begin{figure}[H]
+		%	\includegraphics[width= 14cm]{visual_insight.png}
+		%\end{figure}
+	%\end{frame}
 
-	\begin{frame}{Анализ данных (скалограмма) --- Coca Cola}
+	\begin{frame}{Анализ данных (скалограмма) --- Coca-Cola (KO)}
 		\begin{figure}[H]
 			\includegraphics[width= 14cm]{scalogram_insights_us.png}
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{Анализ данных (скалограмма) --- Kweichow Moutai}
+	\begin{frame}{Анализ данных (скалограмма) --- Kweichow Moutai (Co)}
 		\begin{figure}[H]
 			\includegraphics[width= 14cm]{scalogram_insights_china.png}
 		\end{figure}
@@ -247,7 +255,7 @@
 			\item Эконометрические модели менее точны для цен развивающихся рынков.
 			\item (MSSA) Нет шума $\Rightarrow$ более точный прогноз.
 			\item EWMA --- быстрый и хороший в точности статистический подход $\equiv$ trade off.
-			\item Boosting вида ARIMA + GARCH, ARFIMA + GARCH --- плохой подход.
+			\item Boosting вида ARIMA + GARCH, ARFIMA + GARCH --- неэффективный подход.
 		\end{enumerate}
 	\end{frame}
 	
